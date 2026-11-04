@@ -65,5 +65,5 @@ To use your own data, set `GARMIN_PERSONAL_API_KEY` and run `python pull_garmin.
 | `training-plan-2026-27.json` | The sample season plan: blocks, weeks, day templates, warm-ups |
 | `data/` | Synthetic sample data in the pullers' output format |
 | `site/` | The project landing page served by GitHub Pages |
-| `tools/` | Sample-data generator and the GitHub Pages builder |
+| `tools/` | Sample-data generator, the GitHub Pages builder and `shoot_pages.py`, which re-takes the site's pictures |
 | `tests/` | pytest suite (runs on every push) |

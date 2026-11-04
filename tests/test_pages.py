@@ -46,3 +46,15 @@ def test_landing_page_carries_no_real_training_numbers():
     page = (build_pages.SITE / "index.html").read_text(encoding="utf-8")
     assert "synthetic" in page.lower()
     assert not re.search(r"\b\d+(\.\d+)? ?kg\b|\bbpm\b|\bms\b", page)
+
+
+def test_the_site_loads_nothing_from_other_hosts_and_the_demo_has_a_share_card(tmp_path):
+    assert build_pages.main(["--out", str(tmp_path)]) == 0
+    demo = (tmp_path / "demo" / "index.html").read_text(encoding="utf-8")
+    for page in ((tmp_path / "index.html").read_text(encoding="utf-8"), demo):
+        assert "fonts.googleapis.com" not in page and "fonts.gstatic.com" not in page
+        assert not re.search(r'<(?:script|link|img|source)[^>]+(?:src|href|srcset)="https?://', page.replace(
+            '<link rel="canonical" href="https://', '<link rel="canonical" href="'))
+    assert f"<title>{build_pages.DEMO_TITLE}</title>" in demo
+    assert f'<meta property="og:image" content="{build_pages.SITE_URL}og.png">' in demo
+    assert (tmp_path / "fonts" / "manrope.css").exists() and (tmp_path / "fonts" / "OFL.txt").exists()

@@ -4,77 +4,110 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Kunto: your training, read in ten seconds</title>
-<meta name="description" content="Kunto turns a Garmin watch and a Hevy gym log into one fast page: recovery, the training plan and the next load on the bar. A personal project, with a live demo on synthetic data.">
+<meta name="description" content="Kunto turns a Garmin watch and a Hevy gym log into one fast page: recovery, the training plan and the next load on the bar, plus a read-only MCP server for AI coaching. Live demo on synthetic data.">
+<link rel="canonical" href="https://henrijantti.github.io/Fitness-Coach/">
+<meta name="theme-color" content="#f3f4f9" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0e0f1a" media="(prefers-color-scheme: dark)">
 <meta property="og:type" content="website">
+<meta property="og:site_name" content="Kunto">
 <meta property="og:title" content="Kunto: your training, read in ten seconds">
 <meta property="og:description" content="A training dashboard built from Garmin and Hevy data, with a read-only MCP server for AI coaching. Live demo on synthetic data.">
 <meta property="og:image" content="https://henrijantti.github.io/Fitness-Coach/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The Kunto dashboard on a phone: readiness 56, sleep, HRV and today's session">
 <meta property="og:url" content="https://henrijantti.github.io/Fitness-Coach/">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400..800&display=swap" rel="stylesheet">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preload" href="fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="fonts/manrope.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareSourceCode","name":"Kunto","description":"A training dashboard built from Garmin and Hevy data, with a read-only MCP server for AI coaching.","codeRepository":"https://github.com/henrijantti/Fitness-Coach","programmingLanguage":"Python","author":{"@type":"Person","name":"henrijantti","url":"https://github.com/henrijantti"}}</script>
 <style>
 :root {
   color-scheme: light;
   --app: #f3f4f9; --surface: #ffffff; --surface-2: #fafafd; --ink: #191b2b; --ink-soft: #2f3247; --muted: #646780;
   --line: #e6e7f0; --line-2: #d6d6f7; --primary: #5a5ad6; --primary-ink: #3f3fb4; --primary-soft: #ededfc;
-  --success: #17895f; --success-soft: #e3f5ec; --end: #191b2b; --end-ink: #ffffff; --end-muted: #b9bbd0; --end-line: #2f3247;
+  --btn: #5a5ad6; --success: #12704e; --success-soft: #e3f5ec; --end: #191b2b; --end-ink: #ffffff; --end-muted: #b9bbd0;
+  --code: #191b2b; --code-ink: #e8e8f6; --code-dim: #9496ad; --code-accent: #b4b4ff; --code-ok: #6fd6ac;
   --shadow: 0 1px 2px rgba(25,27,43,.04), 0 6px 24px -12px rgba(25,27,43,.10);
-  --frame: 0 24px 60px -12px rgba(25,27,43,.22);
+  --frame: 0 30px 70px -20px rgba(25,27,43,.30);
 }
 @media (prefers-color-scheme: dark) {
   :root {
     color-scheme: dark;
     --app: #0e0f1a; --surface: #171828; --surface-2: #1d1e31; --ink: #f1f1f8; --ink-soft: #c9cadb; --muted: #9496ad;
     --line: #2a2b40; --line-2: #34356a; --primary: #8080f0; --primary-ink: #b4b4ff; --primary-soft: #23244a;
-    --success: #4cc495; --success-soft: #133326; --end: #1d1e31; --end-line: #34355a;
+    --btn: #5a5ad6; --success: #4cc495; --success-soft: #133326; --end: #1d1e31;
+    --code: #0a0b14; --code-ink: #e8e8f6;
     --shadow: 0 1px 2px rgba(0,0,0,.3), 0 6px 24px -12px rgba(0,0,0,.5);
-    --frame: 0 24px 60px -12px rgba(0,0,0,.6);
+    --frame: 0 30px 70px -20px rgba(0,0,0,.7);
   }
 }
 * { box-sizing: border-box; }
 html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
-body { margin: 0; background: var(--app); color: var(--ink); font: 16px/1.55 Manrope, system-ui, -apple-system, "Segoe UI", sans-serif; }
+body { margin: 0; background: var(--app); color: var(--ink); font: 16px/1.55 Manrope, system-ui, -apple-system, "Segoe UI", sans-serif; overflow-x: hidden; }
 a { color: inherit; }
-img { display: block; max-width: 100%; }
-.wrap { max-width: 1180px; margin: 0 auto; padding: 0 24px; }
+img { display: block; max-width: 100%; height: auto; }
+.wrap { max-width: 1180px; margin-inline: auto; padding-inline: 24px; }
 .skip { position: absolute; left: -999px; } .skip:focus { left: 16px; top: 16px; background: var(--surface); padding: 8px 12px; border-radius: 8px; z-index: 9; }
-a:focus-visible, .btn:focus-visible { outline: 3px solid var(--primary); outline-offset: 3px; border-radius: 12px; }
+a:focus-visible, .btn:focus-visible, button:focus-visible { outline: 3px solid var(--primary); outline-offset: 3px; border-radius: 12px; }
 
-.nav { display: flex; align-items: center; gap: 24px; padding-top: 20px; padding-bottom: 20px; }
+.nav { display: flex; align-items: center; gap: 24px; padding-block: 20px; }
 .brand { display: flex; gap: 10px; align-items: center; font-weight: 800; font-size: 20px; letter-spacing: -.01em; text-decoration: none; }
-.nav .links { margin-left: auto; display: flex; gap: 22px; font-weight: 600; font-size: 14px; color: var(--ink-soft); }
+.nav .links { margin-left: auto; display: flex; align-items: center; gap: 22px; font-weight: 600; font-size: 14px; color: var(--ink-soft); }
 .nav .links a { text-decoration: none; } .nav .links a:hover { color: var(--primary-ink); }
+.nav .gh { display: inline-flex; align-items: center; gap: 6px; border: 1px solid var(--line); border-radius: 10px; padding: 7px 12px; background: var(--surface); }
+.gh svg { width: 16px; height: 16px; fill: currentColor; }
 
 .btn { display: inline-flex; align-items: center; gap: 8px; border-radius: 12px; padding: 12px 18px; font-weight: 700; font-size: 15px; text-decoration: none; border: 1px solid var(--line); background: var(--surface); color: var(--ink); }
 .btn:hover { border-color: var(--line-2); }
-.btn.p { background: var(--primary); border-color: var(--primary); color: #fff; box-shadow: 0 8px 20px -8px rgba(90,90,214,.6); }
-.btn.p:hover { filter: brightness(1.06); }
+.btn.p { background: var(--btn); border-color: var(--btn); color: #fff; box-shadow: 0 8px 20px -8px rgba(90,90,214,.6); }
+.btn.p:hover { filter: brightness(1.08); }
 .eyebrow { font-size: 12px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: var(--primary-ink); }
-.chip { display: inline-flex; align-items: center; gap: 6px; font-size: 12px; font-weight: 700; padding: 4px 10px; border-radius: 999px; background: var(--success-soft); color: var(--success); }
+.chip { display: inline-flex; align-items: center; gap: 6px; font-size: 12px; font-weight: 800; padding: 4px 10px; border-radius: 999px; background: var(--success-soft); color: var(--success); }
+.chip::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: currentColor; }
 
-.hero { padding-top: 32px; display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 48px; align-items: center; }
-h1 { font-size: clamp(38px, 5.4vw, 64px); line-height: 1.02; letter-spacing: -.035em; margin: 16px 0 18px; font-weight: 800; text-wrap: balance; }
+/* Hero: one legible desktop shot with a phone over its corner */
+.hero { padding-top: 28px; text-align: center; }
+h1 { font-size: clamp(40px, 6vw, 72px); line-height: 1.02; letter-spacing: -.035em; margin: 16px auto 18px; font-weight: 800; text-wrap: balance; max-width: 14em; }
 h1 em { font-style: normal; color: var(--primary); }
-.lede { font-size: 18px; color: var(--ink-soft); max-width: 30em; margin: 0 0 28px; }
-.ctas { display: flex; gap: 12px; flex-wrap: wrap; }
+.lede { font-size: 19px; color: var(--ink-soft); max-width: 36em; margin: 0 auto 28px; }
+.ctas { display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; }
 .note { margin: 18px 0 0; font-size: 13px; color: var(--muted); }
-.stage { position: relative; display: flex; justify-content: center; align-items: flex-end; padding: 8px 0 24px; }
-.phone { width: 31%; max-width: 250px; border-radius: 30px; overflow: hidden; border: 7px solid #191b2b; box-shadow: var(--frame); aspect-ratio: 390 / 844; background: #fff; flex: none; }
-.phone img { width: 100%; height: 100%; object-fit: cover; object-position: top; }
-.phone.side { width: 27%; margin: 0 -4%; transform: translateY(-6%) rotate(-4deg); opacity: .96; } .phone.side.r { transform: translateY(-6%) rotate(4deg); } .phone.mid { position: relative; z-index: 1; }
+.note a { color: var(--ink-soft); font-weight: 700; }
+.stage { position: relative; margin: 56px auto 0; max-width: 1080px; padding-right: 7%; }
+.browser { border-radius: 16px; overflow: hidden; background: var(--surface); box-shadow: var(--frame); border: 1px solid var(--line); }
+.browser .bar { display: flex; align-items: center; gap: 7px; height: 34px; padding: 0 14px; border-bottom: 1px solid var(--line); background: var(--surface-2); }
+.browser .bar i { width: 10px; height: 10px; border-radius: 50%; background: var(--line-2); }
+.browser .bar span { margin-left: 12px; font-size: 12px; color: var(--muted); font-weight: 600; }
+.stage .phone { position: absolute; right: 0; bottom: -40px; width: 23%; border-radius: 30px; overflow: hidden; border: 7px solid #191b2b; box-shadow: var(--frame); background: #fff; }
 
-.qs { margin-top: 56px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+/* Three questions, each with the part of the page that answers it */
+.qa { margin-top: 120px; display: grid; gap: 28px; }
+.row { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 48px; align-items: center; }
+.row:nth-child(even) .txt { order: 2; }
+.row .n { font-size: 15px; font-weight: 800; color: var(--primary); letter-spacing: .02em; }
+.row h2 { font-size: clamp(26px, 3vw, 36px); letter-spacing: -.025em; line-height: 1.1; margin: 6px 0 12px; }
+.row p { color: var(--ink-soft); margin: 0 0 12px; }
+.row ul { margin: 0; padding-left: 18px; color: var(--ink-soft); font-size: 15px; } .row li { margin: 4px 0; }
+.crop { border-radius: 20px; overflow: hidden; box-shadow: var(--shadow); border: 1px solid var(--line); background: var(--surface); }
+
+section.block { margin-top: 112px; }
+section.block > h2 { font-size: clamp(28px, 3.4vw, 40px); letter-spacing: -.025em; margin: 8px 0 12px; line-height: 1.1; text-wrap: balance; }
+section.block > .intro { color: var(--ink-soft); max-width: 44em; margin: 0 0 28px; }
 .card { background: var(--surface); border-radius: 20px; padding: 24px; box-shadow: var(--shadow); }
-.q .n { font-size: 44px; font-weight: 800; letter-spacing: -.03em; color: var(--primary); line-height: 1; }
-.card h3 { margin: 14px 0 6px; font-size: 19px; letter-spacing: -.01em; }
+.card h3 { margin: 0 0 6px; font-size: 18px; letter-spacing: -.01em; }
 .card p { margin: 0; color: var(--ink-soft); font-size: 15px; }
 
-section.block { margin-top: 80px; }
-section.block h2 { font-size: clamp(28px, 3.4vw, 40px); letter-spacing: -.025em; margin: 8px 0 12px; line-height: 1.1; text-wrap: balance; }
-section.block > .intro { color: var(--ink-soft); max-width: 44em; margin: 0 0 28px; }
+/* AI coach */
+.ai { display: grid; grid-template-columns: minmax(0, 6fr) minmax(0, 5fr); gap: 28px; align-items: start; }
+.term { background: var(--code); color: var(--code-ink); border-radius: 20px; padding: 20px 22px; font: 13px/1.65 ui-monospace, "SF Mono", Menlo, Consolas, monospace; overflow-x: auto; box-shadow: var(--frame); }
+.term .h { display: flex; gap: 7px; margin-bottom: 14px; } .term .h i { width: 10px; height: 10px; border-radius: 50%; background: #34355a; }
+.term .u { color: var(--code-accent); } .term .d { color: var(--code-dim); } .term .ok { color: var(--code-ok); }
+.term pre { margin: 0; white-space: pre-wrap; font: inherit; }
+.roles { display: grid; gap: 14px; }
+.roles .card { padding: 20px; } .roles b { color: var(--primary-ink); }
 
 .flow { background: var(--surface); border-radius: 24px; padding: 28px; box-shadow: var(--shadow); display: grid; grid-template-columns: 1fr auto 1fr auto 1fr; gap: 16px; align-items: center; }
 .stack { display: flex; flex-direction: column; gap: 10px; }
@@ -83,33 +116,40 @@ section.block > .intro { color: var(--ink-soft); max-width: 44em; margin: 0 0 28
 .node.k { background: var(--primary-soft); border-color: var(--line-2); }
 .arrow { color: var(--primary); font-weight: 800; font-size: 22px; text-align: center; }
 
-.feat { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
-.shot { background: var(--surface); border-radius: 20px; overflow: hidden; box-shadow: var(--shadow); }
-.shot .pic { background: var(--primary-soft); height: 380px; overflow: hidden; display: flex; justify-content: center; padding-top: 28px; border-bottom: 1px solid var(--line); }
-.shot .pic img { width: 290px; height: auto; border-radius: 24px 24px 0 0; border: 6px solid #191b2b; border-bottom: 0; box-shadow: var(--frame); }
-.shot > div:last-child { padding: 20px 22px; } .shot h3 { margin: 0 0 6px; font-size: 18px; } .shot p { margin: 0; color: var(--ink-soft); font-size: 15px; }
-
-.dec { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
-.dec .card h3 { margin-top: 0; }
+.dec { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
 .dec .k { display: inline-block; font-size: 12px; font-weight: 800; color: var(--primary-ink); background: var(--primary-soft); border-radius: 999px; padding: 3px 10px; margin-bottom: 12px; }
 
-.built { display: flex; flex-wrap: wrap; gap: 10px; }
-.built span { background: var(--surface); border: 1px solid var(--line); border-radius: 999px; padding: 8px 14px; font-weight: 700; font-size: 14px; }
+.run { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 28px; align-items: center; }
+.run .term { position: relative; }
+.copy { position: absolute; top: 14px; right: 14px; font: 700 12px Manrope, system-ui, sans-serif; color: var(--code-ink); background: #2f3247; border: 0; border-radius: 8px; padding: 6px 10px; cursor: pointer; }
+.built { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; }
+.built span { background: var(--surface); border: 1px solid var(--line); border-radius: 999px; padding: 7px 13px; font-weight: 700; font-size: 13px; }
 
-.end { margin-top: 80px; padding: 36px; border-radius: 28px; background: var(--end); color: var(--end-ink); display: flex; gap: 24px; align-items: center; justify-content: space-between; flex-wrap: wrap; }
-.end h2 { margin: 0; font-size: 28px; letter-spacing: -.02em; } .end p { margin: 6px 0 0; color: var(--end-muted); }
-footer { padding-top: 28px; padding-bottom: 40px; color: var(--muted); font-size: 13px; display: flex; gap: 16px; flex-wrap: wrap; justify-content: space-between; }
-footer a { color: var(--muted); }
+.end { margin-top: 112px; padding: 40px; border-radius: 28px; background: var(--end); color: var(--end-ink); display: flex; gap: 24px; align-items: center; justify-content: space-between; flex-wrap: wrap; }
+.end h2 { margin: 0; font-size: 30px; letter-spacing: -.02em; } .end p { margin: 6px 0 0; color: var(--end-muted); }
+.end .btn:not(.p) { background: transparent; color: #fff; border-color: #3c3f5c; }
+footer.wrap { padding-block: 32px 44px; color: var(--muted); font-size: 13px; display: flex; gap: 16px; flex-wrap: wrap; justify-content: space-between; }
+footer a { color: var(--ink-soft); }
 
 @media (max-width: 900px) {
-  .hero { grid-template-columns: 1fr; gap: 28px; padding-top: 20px; }
-  .qs, .feat, .dec { grid-template-columns: 1fr; }
+  .row, .ai, .run { grid-template-columns: 1fr; gap: 20px; }
+  .row:nth-child(even) .txt { order: 0; }
+  .dec { grid-template-columns: 1fr; }
   .flow { grid-template-columns: 1fr; padding: 20px; }
   .arrow { transform: rotate(90deg); }
-  section.block, .end { margin-top: 56px; }
+  .qa { margin-top: 88px; gap: 56px; }
+  section.block, .end { margin-top: 80px; }
   .end { padding: 28px; }
 }
-@media (max-width: 760px) { .nav .links { display: none; } .wrap { padding: 0 16px; } }
+@media (max-width: 640px) {
+  .wrap { padding-inline: 16px; }
+  .nav .links .t { display: none; }
+  .hero { text-align: left; } h1, .lede { margin-inline: 0; } .ctas { justify-content: flex-start; }
+  .lede { font-size: 17px; }
+  .stage { padding-right: 0; margin-top: 36px; }
+  .stage .browser { display: none; }
+  .stage .phone { position: static; width: 72%; margin: 0 auto; }
+}
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
 </style>
 </head>
@@ -117,35 +157,80 @@ footer a { color: var(--muted); }
 <a class="skip" href="#main">Skip to content</a>
 <nav class="nav wrap" aria-label="Main">
   <a class="brand" href="./"><img src="favicon.svg" width="30" height="30" alt="">Kunto</a>
-  <div class="links"><a href="#how">How it works</a><a href="#decisions">Decisions</a><a href="demo/">Live demo</a><a href="https://github.com/henrijantti/Fitness-Coach">GitHub</a></div>
+  <div class="links"><a class="t" href="#how">How it works</a><a class="t" href="#ai">AI coach</a><a href="demo/">Demo</a><a class="gh" href="https://github.com/henrijantti/Fitness-Coach"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>GitHub</a></div>
 </nav>
 
 <main id="main">
 <header class="hero wrap">
-  <div>
-    <span class="chip">● Live demo · synthetic data</span>
-    <h1>Your training, <em>read in ten seconds.</em></h1>
-    <p class="lede">Kunto turns a Garmin watch and a Hevy gym log into one fast page that answers three questions every morning: how recovered am I, what is on the plan today, and what goes on the bar next.</p>
-    <div class="ctas"><a class="btn p" href="demo/">Open the live demo →</a><a class="btn" href="https://github.com/henrijantti/Fitness-Coach">View the code</a></div>
-    <p class="note">A personal project by @henrijantti · Python, one static page, 460+ tests</p>
-  </div>
-  <div class="stage" aria-hidden="true">
-    <div class="phone side"><img src="img/phone-training.png" alt="" width="390" height="844"></div>
-    <div class="phone mid"><img src="img/phone-overview.png" alt="" width="390" height="844"></div>
-    <div class="phone side r"><img src="img/phone-gym.png" alt="" width="390" height="844"></div>
+  <span class="chip">Live demo on synthetic data</span>
+  <h1>Your training, <em>read in ten seconds.</em></h1>
+  <p class="lede">Kunto turns a Garmin watch and a Hevy gym log into one page that answers three questions every morning, and gives an AI coach read-only access to the same numbers.</p>
+  <div class="ctas"><a class="btn p" href="demo/">Open the live demo →</a><a class="btn" href="https://github.com/henrijantti/Fitness-Coach">View the code</a></div>
+  <p class="note">A personal project by <a href="https://github.com/henrijantti">@henrijantti</a> · Python 3.12 · one static page · <a href="https://github.com/henrijantti/Fitness-Coach/actions/workflows/tests.yml">tests on every push</a></p>
+  <div class="stage">
+    <div class="browser">
+      <div class="bar" aria-hidden="true"><i></i><i></i><i></i><span>Kunto · Overview</span></div>
+      <picture>
+        <source srcset="img/desk-overview-dark.webp" media="(prefers-color-scheme: dark)">
+        <img src="img/desk-overview-light.webp" width="1600" height="1000" fetchpriority="high" alt="The Kunto Overview tab on a laptop: readiness 56 out of 100, sleep, HRV, resting HR and acute load, upcoming sessions and recent activities">
+      </picture>
+    </div>
+    <div class="phone">
+      <picture>
+        <source srcset="img/phone-overview-dark.webp" media="(prefers-color-scheme: dark)">
+        <img src="img/phone-overview-light.webp" width="600" height="1298" alt="The same Overview tab on a phone">
+      </picture>
+    </div>
   </div>
 </header>
 
-<div class="qs wrap">
-  <div class="card q"><div class="n">01</div><h3>How recovered am I?</h3><p>Readiness, sleep, overnight HRV against its baseline, resting HR and acute load, each with a plain-word verdict.</p></div>
-  <div class="card q"><div class="n">02</div><h3>What is on the plan?</h3><p>The season plan, matched against what the watch and the gym log show: done, moved, swapped or missed.</p></div>
-  <div class="card q"><div class="n">03</div><h3>What goes on the bar?</h3><p>Each lift's next load from the plan's progression rule, eased automatically when recovery signals turn.</p></div>
+<div class="qa wrap">
+  <div class="row">
+    <div class="txt"><div class="n">01 · OVERVIEW</div><h2>How recovered am I?</h2><p>A readiness score with the reasons next to it, each in plain words.</p>
+      <ul><li>Sleep, overnight HRV against its 7-day baseline, resting HR, stress</li><li>Acute load against the optimal range</li><li>Our own estimate where Garmin's API has none, labelled as such</li></ul></div>
+    <div class="crop"><picture><source srcset="img/f-ready-dark.webp" media="(prefers-color-scheme: dark)"><img src="img/f-ready-light.webp" width="1100" height="669" loading="lazy" alt="Readiness card: 56, moderate, with sleep score 76, HRV below its 7-day average, acute load 462 optimal and resting HR 52"></picture></div>
+  </div>
+  <div class="row">
+    <div class="txt"><div class="n">02 · TRAINING</div><h2>What is on the plan?</h2><p>The season plan, matched against what the watch and the gym log actually show.</p>
+      <ul><li>Every session marked done, moved, swapped, missed or planned</li><li>Gym sessions credited by what was lifted, so a swapped weekend reads as moved</li><li>Run km against the week's target</li></ul></div>
+    <div class="crop"><picture><source srcset="img/f-week-dark.webp" media="(prefers-color-scheme: dark)"><img src="img/f-week-light.webp" width="1100" height="530" loading="lazy" alt="Week 6, a deload week: Monday's run commute and Tuesday's game both done, Wednesday's bonus session today, Thursday planned"></picture></div>
+  </div>
+  <div class="row">
+    <div class="txt"><div class="n">03 · GYM</div><h2>What goes on the bar?</h2><p>Every Hevy session's sets, and each lift's next load from the plan's progression rule.</p>
+      <ul><li>Top sets highlighted, personal bests flagged</li><li>The rule eases to RPE 7 or less when recovery signals turn</li><li>The same function feeds the page, the weekly report and the AI coach</li></ul></div>
+    <div class="crop"><picture><source srcset="img/f-gym-dark.webp" media="(prefers-color-scheme: dark)"><img src="img/f-gym-light.webp" width="1100" height="922" loading="lazy" alt="Gym log: Sunday's upper session with overhead press, weighted pull-ups and rows, three marked best yet"></picture></div>
+  </div>
 </div>
+
+<section class="block wrap" id="ai">
+  <span class="eyebrow">AI coach</span>
+  <h2>A coach that reads the log, and cannot write to it</h2>
+  <p class="intro">A read-only Model Context Protocol server gives a Claude coaching session five tools over the gym log. It asks for numbers instead of guessing them, and every plan change still needs the athlete's yes.</p>
+  <div class="ai">
+    <div class="term" role="img" aria-label="Example MCP call: next_load for squat returns Saturday's front squat at the same load as last time, with fewer sets, because it is a deload week">
+      <div class="h" aria-hidden="true"><i></i><i></i><i></i></div>
+<pre><span class="u">you ›</span> What goes on the bar for squats on Saturday?
+
+<span class="d">⏺ hevy · next_load(exercise="squat")</span>
+<span class="ok">Next loads (Hevy through 2026-11-01, Garmin through 2026-11-04):</span>
+- 2026-11-07 Sat, Front squat 2×3: deload week: the same
+  load, fewer sets (from Sat 31 Oct, 4×5 @ RPE 7–7.5)
+
+<span class="u">coach ›</span> The same load as last Saturday, for 2×3. It is a
+deload week, so the load holds and the sets drop.</pre>
+    </div>
+    <div class="roles">
+      <div class="card"><h3>Five read-only tools</h3><p><b>list_sessions</b>, <b>session_detail</b>, <b>lift_history</b>, <b>find_exercise</b>, <b>next_load</b>. No tool can write to Hevy.</p></div>
+      <div class="card"><h3>A head coach and two specialists</h3><p>One session decides and writes. Strength and running skills advise it, and a team review runs at each checkpoint.</p></div>
+      <div class="card"><h3>Refreshed while I sleep</h3><p>Scheduled routines pull the data and rebuild the page every morning, and draft a weekly review on Sunday.</p></div>
+    </div>
+  </div>
+</section>
 
 <section class="block wrap" id="how">
   <span class="eyebrow">How it works</span>
   <h2>Plain files in, one page out</h2>
-  <p class="intro">Pullers write tidy CSVs, a JSON plan holds the season, and a set of small pure Python modules bakes everything into a single self-contained page. No server, no database, no tracking.</p>
+  <p class="intro">Pullers write tidy CSVs, a JSON plan holds the season, and small pure Python modules bake everything into one self-contained page. No server, no database, no tracking.</p>
   <div class="flow">
     <div class="stack"><div class="node"><b>Garmin Connect</b><small>Official Personal API</small></div><div class="node"><b>Hevy</b><small>Gym log API</small></div></div>
     <div class="arrow" aria-hidden="true">→</div>
@@ -155,40 +240,39 @@ footer a { color: var(--muted); }
   </div>
 </section>
 
-<section class="block wrap" id="inside">
-  <span class="eyebrow">Inside</span>
-  <h2>Built like a product, used by one athlete</h2>
-  <div class="feat">
-    <div class="shot"><div class="pic"><img src="img/phone-training.png" alt="The Training tab: the season and the week's sessions" loading="lazy"></div><div><h3>Plan matching</h3><p>Each week of the season plan, every session marked done, moved, swapped, missed or upcoming.</p></div></div>
-    <div class="shot"><div class="pic"><img src="img/phone-gym.png" alt="The Gym tab: sessions with their top sets" loading="lazy"></div><div><h3>Gym log and progression</h3><p>Every session's top sets, a calendar and a per-lift view, plus the next load from one shared rule.</p></div></div>
-  </div>
-</section>
-
 <section class="block wrap" id="decisions">
   <span class="eyebrow">Decisions that mattered</span>
   <h2>Small rules that keep it honest</h2>
   <div class="dec">
-    <div class="card"><span class="k">Matching</span><h3>Credit sessions by what was lifted</h3><p>The gym log, not the calendar, decides which session was done, so a swapped weekend reads as moved rather than missed.</p></div>
-    <div class="card"><span class="k">Progression</span><h3>One rule, three readers</h3><p>The dashboard, the weekly report and the AI coach's tools call the same function for the next load, so they never disagree.</p></div>
-    <div class="card"><span class="k">Estimates</span><h3>Label every estimate</h3><p>Where the official API has no readiness or load focus, Kunto computes its own and says so on the page.</p></div>
-    <div class="card"><span class="k">Privacy</span><h3>Refuse private text</h3><p>The build fails rather than publish anything medical, and every write is atomic, so a crash never leaves half a page.</p></div>
-    <div class="card"><span class="k">AI coaching</span><h3>Read-only by design</h3><p>A Model Context Protocol server lets a Claude coaching session query the gym log and next loads, with no way to write to it.</p></div>
-    <div class="card"><span class="k">Ops</span><h3>Refreshed while I sleep</h3><p>Scheduled routines pull the data and rebuild the page every morning and draft a weekly review on Sunday. Plan changes still need my approval.</p></div>
+    <div class="card"><span class="k">Matching</span><h3>Credit sessions by what was lifted</h3><p>The gym log, not the calendar, decides which session was done.</p></div>
+    <div class="card"><span class="k">Progression</span><h3>One rule, three readers</h3><p>The page, the weekly report and the coach's tools call the same function, so they never disagree.</p></div>
+    <div class="card"><span class="k">Estimates</span><h3>Label every estimate</h3><p>Where the official API has no readiness or load focus, Kunto computes its own and says so.</p></div>
+    <div class="card"><span class="k">Privacy</span><h3>Refuse private text</h3><p>The build checks the page against a list of private terms and fails rather than publish one.</p></div>
+    <div class="card"><span class="k">Safety</span><h3>Atomic writes</h3><p>A crashed build never leaves half a page, and the page's JSON is escaped against script injection.</p></div>
+    <div class="card"><span class="k">Ops</span><h3>Approval before change</h3><p>Routines draft, the athlete decides. Every plan change lands in a dated decision log.</p></div>
   </div>
 </section>
 
-<section class="block wrap">
-  <span class="eyebrow">Built with</span>
-  <h2 style="font-size:24px">Small tools, well tested</h2>
-  <div class="built"><span>Python 3.12</span><span>Garmin Personal API</span><span>Hevy API</span><span>Model Context Protocol</span><span>Claude Code</span><span>pytest</span><span>GitHub Actions</span></div>
+<section class="block wrap" id="run">
+  <div class="run">
+    <div><span class="eyebrow">Run it yourself</span><h2 style="font-size:clamp(26px,3vw,36px);letter-spacing:-.025em;line-height:1.1;margin:8px 0 12px">Three commands, sample data included</h2>
+      <p style="color:var(--ink-soft);margin:0">Python 3.12. The repo ships a fictional athlete's season, so the page builds before you connect anything. Add your own Garmin and Hevy keys when you are ready.</p>
+      <div class="built"><span>Python 3.12</span><span>Garmin Personal API</span><span>Hevy API</span><span>MCP</span><span>Claude Code</span><span>pytest</span><span>GitHub Actions</span></div></div>
+    <div class="term"><button class="copy" type="button" onclick="navigator.clipboard&&navigator.clipboard.writeText(this.nextElementSibling.innerText.split('\n').filter(l=>l.startsWith('$ ')).map(l=>l.slice(2)).join('\n'));this.textContent='Copied'">Copy</button>
+<pre><span class="d">$ </span>git clone https://github.com/henrijantti/Fitness-Coach
+<span class="d">$ </span>cd Fitness-Coach
+<span class="d">$ </span>python -m pip install -r requirements.txt
+<span class="d">$ </span>python tools/build_pages.py --out _site
+<span class="ok">wrote _site: landing page and demo/</span></pre></div>
+  </div>
 </section>
 
 <div class="wrap"><div class="end">
   <div><h2>See it with sample data</h2><p>A fictional athlete, six weeks into a season plan.</p></div>
-  <a class="btn p" href="demo/">Open the live demo →</a>
+  <div class="ctas"><a class="btn p" href="demo/">Open the live demo →</a><a class="btn" href="https://github.com/henrijantti/Fitness-Coach">View the code</a></div>
 </div></div>
 </main>
 
-<footer class="wrap"><span>Kunto is a personal project. The demo uses synthetic data only.</span><a href="https://github.com/henrijantti/Fitness-Coach">Source on GitHub</a></footer>
+<footer class="wrap"><span>Kunto is a personal project by <a href="https://github.com/henrijantti">@henrijantti</a>. The demo uses synthetic data only.</span><a href="https://github.com/henrijantti/Fitness-Coach">Source on GitHub</a></footer>
 </body>
 </html>

@@ -5,12 +5,14 @@ built from the synthetic sample data, at /demo.
 
 Kunto's page is a fragment (its live host adds the document head), so the demo is wrapped in a full HTML
 document, topped with a bar that says it is a demo, and frozen as a snapshot dated SAMPLE_TODAY, the last
-day of the sample data. The README's screenshots double as the landing page's images (img/).
+day of the sample data. Its web font is swapped for the self-hosted copy in site/fonts/, so the site makes no
+third-party requests. site/ is copied whole (img/, fonts/). tools/shoot_pages.py re-takes all the pictures.
 """
 from __future__ import annotations
 
 import argparse
 import pathlib
+import re
 import shutil
 import sys
 
@@ -22,12 +24,25 @@ from kunto import build_kunto          # noqa: E402
 
 SAMPLE_TODAY = "2026-11-04"
 SITE = ROOT / "site"
-SHOTS = ROOT / "docs" / "screenshots"
 REPO_URL = "https://github.com/henrijantti/Fitness-Coach"
+SITE_URL = "https://henrijantti.github.io/Fitness-Coach/"
+DEMO_TITLE = "Kunto demo: a fictional athlete's season"
+DEMO_TEXT = "The Kunto training dashboard running on synthetic sample data: recovery, the season plan and the gym log."
+GOOGLE_FONTS = re.compile(r'<link[^>]*fonts\.(?:googleapis|gstatic)\.com[^>]*>\n?')
 HEAD = ('<!doctype html>\n<html lang="en">\n<head>\n<meta charset="utf-8">\n'
         '<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">\n'
-        '<meta name="description" content="The Kunto dashboard running on synthetic sample data.">\n'
+        f'<title>{DEMO_TITLE}</title>\n'
+        f'<meta name="description" content="{DEMO_TEXT}">\n'
+        f'<link rel="canonical" href="{SITE_URL}demo/">\n'
+        '<meta property="og:type" content="website">\n<meta property="og:site_name" content="Kunto">\n'
+        f'<meta property="og:title" content="{DEMO_TITLE}">\n<meta property="og:description" content="{DEMO_TEXT}">\n'
+        f'<meta property="og:image" content="{SITE_URL}og.png">\n'
+        '<meta property="og:image:width" content="1200">\n<meta property="og:image:height" content="630">\n'
+        f'<meta property="og:url" content="{SITE_URL}demo/">\n<meta name="twitter:card" content="summary_large_image">\n'
         '<link rel="icon" href="../favicon.svg" type="image/svg+xml">\n'
+        '<link rel="apple-touch-icon" href="../apple-touch-icon.png">\n'
+        '<link rel="preload" href="../fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin>\n'
+        '<link rel="stylesheet" href="../fonts/manrope.css">\n'
         '<style>body{margin:0}.demo-bar{position:sticky;top:0;z-index:1000;display:flex;flex-wrap:wrap;gap:6px 14px;'
         'align-items:center;justify-content:center;padding:9px 16px;background:#191b2b;color:#fff;text-align:center;'
         'font:600 13px/1.4 Manrope,system-ui,-apple-system,"Segoe UI",sans-serif}.demo-bar b{background:#5a5ad6;'
@@ -48,14 +63,10 @@ def main(argv=None) -> int:
     code = build_kunto.main(["--root", str(ROOT), "--today", SAMPLE_TODAY, "--demo", "--out", str(fragment)])
     if code:
         return code
-    (demo / "index.html").write_text(HEAD + fragment.read_text(encoding="utf-8") + TAIL, encoding="utf-8")
+    body = GOOGLE_FONTS.sub("", fragment.read_text(encoding="utf-8"))
+    (demo / "index.html").write_text(HEAD + body + TAIL, encoding="utf-8")
     fragment.unlink()
-    for f in SITE.iterdir():
-        if f.is_file():
-            shutil.copy2(f, out / f.name)
-    (out / "img").mkdir(exist_ok=True)
-    for f in SHOTS.glob("*.png"):
-        shutil.copy2(f, out / "img" / f.name)
+    shutil.copytree(SITE, out, dirs_exist_ok=True)
     (out / ".nojekyll").write_text("", encoding="utf-8")
     print(f"wrote {out}: landing page and demo/")
     return 0
