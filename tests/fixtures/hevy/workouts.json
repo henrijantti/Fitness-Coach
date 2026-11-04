@@ -1,0 +1,70 @@
+[
+ {"id": "w1", "title": "Morning workout ☀️", "description": "", "start_time": "2026-09-25T09:14:00Z", "end_time": "2026-09-25T10:44:00Z", "exercises": [
+  {"index": 0, "title": "Pull Up", "notes": null, "exercise_template_id": "A0000000", "superset_id": null, "sets": [
+   {"index": 0, "type": "warmup", "weight_kg": null, "reps": 6, "distance_meters": null, "duration_seconds": null, "rpe": null, "custom_metric": null},
+   {"index": 1, "type": "normal", "weight_kg": null, "reps": 14, "distance_meters": null, "duration_seconds": null, "rpe": null, "custom_metric": null}
+  ]},
+  {"index": 1, "title": "Bench Press (Barbell)", "notes": null, "exercise_template_id": "A0000001", "superset_id": null, "sets": [
+   {"index": 2, "type": "warmup", "weight_kg": 42.5, "reps": 8, "distance_meters": null, "duration_seconds": null, "rpe": null, "custom_metric": null},
+   {"index": 3, "type": "warmup", "weight_kg": 67.5, "reps": 4, "distance_meters": null, "duration_seconds": null, "rpe": null, "custom_metric": null},
+   {"index": 4, "type": "warmup", "weight_kg": 77.5, "reps": 2, "distance_meters": null, "duration_seconds": null, "rpe": null, "custom_metric": null},
+   {"index": 5, "type": "warmup", "weight_kg": 85.0, "reps": 1, "distance_meters": null, "duration_seconds": null, "rpe": null, "custom_metric": null},
+   {"index": 6, "type": "warmup", "weight_kg": 92.5, "reps": 1, "distance_meters": null, "duration_seconds": null, "rpe": null, "custom_metric": null},
+   {"index": 7, "type": "normal", "weight_kg": 102.5, "reps": 1, "distance_meters": null, "duration_seconds": null, "rpe": null, "custom_metric": null}
+  ]},
+  {"index": 2, "title": "Push Up", "notes": null, "exercise_template_id": "A0000002", "superset_id": null, "sets": [
+   {"index": 8, "type": "normal", "weight_kg": null, "reps": 41, "distance_meters": null, "duration_seconds": null, "rpe": null, "custom_metric": null},
+   {"index": 9, "type": "normal", "weight_kg": null, "reps": 9, "distance_meters": null, "duration_seconds": null, "rpe": null, "custom_metric": null},
+   {"index": 10, "type": "normal", "weight_kg": null, "reps": 11, "distance_meters": null, "duration_seconds": null, "rpe": null, "custom_metric": null},
+   {"index": 11, "type": "normal", "weight_kg": null, "reps": 10, "distance_meters": null, "duration_seconds": null, "rpe": null, "custom_metric": null},
+   {"index": 12, "type": "normal", "weight_kg": null, "reps": 5, "distance_meters": null, "duration_seconds": null, "rpe": null, "custom_metric": null}
+  ]},
+  {"index": 3, "title": "Dead Hang", "notes": null, "exercise_template_id": "A0000003", "superset_id": null, "sets": [
+   {"index": 13, "type": "normal", "weight_kg": null, "reps": null, "distance_meters": null, "duration_seconds": 120, "rpe": null, "custom_metric": null}
+  ]}
+ ]},
+ {"id": "w2", "title": "Wednesday Evening Lat Pull Up Focus with Biceps and Traps", "description": null, "start_time": "2026-09-09T17:30:00Z", "end_time": "2026-09-09T17:35:00Z", "exercises": [
+  {"index": 0, "title": "Pull Up", "notes": null, "exercise_template_id": "A0000000", "superset_id": null, "sets": [
+   {"index": 0, "type": "normal", "weight_kg": null, "reps": 6, "distance_meters": null, "duration_seconds": null, "rpe": null, "custom_metric": null},
+   {"index": 1, "type": "normal", "weight_kg": null, "reps": 6, "distance_meters": null, "duration_seconds": null, "rpe": null, "custom_metric": null},
+   {"index": 2, "type": "normal", "weight_kg": null, "reps": 6, "distance_meters": null, "duration_seconds": null, "rpe": null, "custom_metric": null}
+  ]}
+ ]},
+ {"id": "w3", "title": "Upper (Strength focus)", "description": "", "start_time": "2025-08-18T09:15:00Z", "end_time": "2025-08-18T09:37:00Z", "exercises": [
+  {"index": 0, "title": "Incline Bench Press (Dumbbell)", "notes": null, "exercise_template_id": "A0000004", "superset_id": null, "sets": [
+   {"index": 0, "type": "normal", "weight_kg": 25.0, "reps": 8, "distance_meters": null, "duration_seconds": null, "rpe": null, "custom_metric": null},
+   {"index": 1, "type": "normal", "weight_kg": 25.0, "reps": 8, "distance_meters": null, "duration_seconds": null, "rpe": null, "custom_metric": null},
+   {"index": 2, "type": "normal", "weight_kg": 25.0, "reps": 9, "distance_meters": null, "duration_seconds": null, "rpe": null, "custom_metric": null}
+  ]},
+  {"index": 1, "title": "Pull Up", "notes": null, "exercise_template_id": "A0000000", "superset_id": null, "sets": [
+   {"index": 3, "type": "normal", "weight_kg": null, "reps": 6, "distance_meters": null, "duration_seconds": null, "rpe": null, "custom_metric": null},
+   {"index": 4, "type": "normal", "weight_kg": null, "reps": 6, "distance_meters": null, "duration_seconds": null, "rpe": null, "custom_metric": null},
+   {"index": 5, "type": "normal", "weight_kg": null, "reps": 6, "distance_meters": null, "duration_seconds": null, "rpe": null, "custom_metric": null}
+  ]},
+  {"index": 2, "title": "Seated Cable Row - V Grip (Cable)", "notes": "Deficit pendlay row", "exercise_template_id": "A0000005", "superset_id": null, "sets": [
+   {"index": 6, "type": "normal", "weight_kg": 65.0, "reps": 7, "distance_meters": null, "duration_seconds": null, "rpe": null, "custom_metric": null},
+   {"index": 7, "type": "normal", "weight_kg": 65.0, "reps": 7, "distance_meters": null, "duration_seconds": null, "rpe": null, "custom_metric": null}
+  ]},
+  {"index": 3, "title": "Machine Shoulder Press", "notes": null, "exercise_template_id": "A0000006", "superset_id": null, "sets": [
+   {"index": 8, "type": "normal", "weight_kg": 35.0, "reps": 10, "distance_meters": null, "duration_seconds": null, "rpe": null, "custom_metric": null},
+   {"index": 9, "type": "normal", "weight_kg": 35.0, "reps": 10, "distance_meters": null, "duration_seconds": null, "rpe": null, "custom_metric": null}
+  ]}
+ ]},
+ {"id": "w4", "title": "Pull - Heavy", "description": null, "start_time": "2025-01-25T15:47:00Z", "end_time": "2025-01-25T16:16:00Z", "exercises": [
+  {"index": 0, "title": "Bent Over Row (Barbell)", "notes": null, "exercise_template_id": "A0000007", "superset_id": null, "sets": [
+   {"index": 0, "type": "normal", "weight_kg": 50.0, "reps": 10, "distance_meters": null, "duration_seconds": null, "rpe": null, "custom_metric": null},
+   {"index": 1, "type": "normal", "weight_kg": 67.5, "reps": 6, "distance_meters": null, "duration_seconds": null, "rpe": null, "custom_metric": null},
+   {"index": 2, "type": "normal", "weight_kg": 75.0, "reps": 11, "distance_meters": null, "duration_seconds": null, "rpe": null, "custom_metric": null},
+   {"index": 3, "type": "normal", "weight_kg": 75.0, "reps": 11, "distance_meters": null, "duration_seconds": null, "rpe": null, "custom_metric": null},
+   {"index": 4, "type": "normal", "weight_kg": 75.0, "reps": 10, "distance_meters": null, "duration_seconds": null, "rpe": null, "custom_metric": null}
+  ]},
+  {"index": 1, "title": "Lat Pulldown (Cable)", "notes": null, "exercise_template_id": "A0000008", "superset_id": null, "sets": [
+   {"index": 5, "type": "normal", "weight_kg": 45.0, "reps": 4, "distance_meters": null, "duration_seconds": null, "rpe": null, "custom_metric": null},
+   {"index": 6, "type": "normal", "weight_kg": 67.5, "reps": 4, "distance_meters": null, "duration_seconds": null, "rpe": null, "custom_metric": null},
+   {"index": 7, "type": "normal", "weight_kg": 67.5, "reps": 5, "distance_meters": null, "duration_seconds": null, "rpe": null, "custom_metric": null}
+  ]},
+  {"index": 2, "title": "Shoulder Press (Dumbbell)", "notes": null, "exercise_template_id": "A0000009", "superset_id": null, "sets": [
+   {"index": 8, "type": "normal", "weight_kg": 15.0, "reps": 3, "distance_meters": null, "duration_seconds": null, "rpe": null, "custom_metric": null}
+  ]}
+ ]}
+]

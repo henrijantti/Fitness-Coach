@@ -1,0 +1,15 @@
+# Tooling caches
+__pycache__/
+.pytest_cache/
+*.pyc
+
+# Kunto build output and any temp file left by a killed write
+kunto/index.html
+*.tmp
+_site/
+
+# A deployment's own private-term list for the page guard (kunto/render.py)
+kunto/private-terms.txt
+
+# Garmin Connect raw JSON cache
+garmin-raw/

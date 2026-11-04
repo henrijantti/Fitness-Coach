@@ -1,0 +1,6 @@
+# Python 3.12+ (csv.QUOTE_STRINGS): python -m pip install -r requirements.txt
+garminconnect>=0.3.16
+mcp>=2.2,<3
+pytest>=9.1
+requests>=2.32
+tzdata>=2026.2

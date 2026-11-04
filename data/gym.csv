@@ -1,0 +1,133 @@
+"title","start_time","end_time","description","exercise_title","superset_id","exercise_notes","set_index","set_type","weight_kg","reps","distance_km","duration_seconds","rpe"
+"Upper","1 Nov 2026, 10:22","1 Nov 2026, 11:27","","Overhead Press (Barbell)",,"",0,"normal",45,5,,,8
+"Upper","1 Nov 2026, 10:22","1 Nov 2026, 11:27","","Overhead Press (Barbell)",,"",1,"normal",45,5,,,7.5
+"Upper","1 Nov 2026, 10:22","1 Nov 2026, 11:27","","Overhead Press (Barbell)",,"",2,"normal",45,5,,,7
+"Upper","1 Nov 2026, 10:22","1 Nov 2026, 11:27","","Overhead Press (Barbell)",,"",3,"normal",45,5,,,7.5
+"Upper","1 Nov 2026, 10:22","1 Nov 2026, 11:27","","Pull Up (Weighted)",,"",0,"normal",6,6,,,8
+"Upper","1 Nov 2026, 10:22","1 Nov 2026, 11:27","","Pull Up (Weighted)",,"",1,"normal",6,6,,,7.5
+"Upper","1 Nov 2026, 10:22","1 Nov 2026, 11:27","","Pull Up (Weighted)",,"",2,"normal",6,6,,,7.5
+"Upper","1 Nov 2026, 10:22","1 Nov 2026, 11:27","","Pull Up (Weighted)",,"",3,"normal",6,6,,,7
+"Upper","1 Nov 2026, 10:22","1 Nov 2026, 11:27","","Pull Up",,"",0,"normal",,8,,,
+"Upper","1 Nov 2026, 10:22","1 Nov 2026, 11:27","","Pull Up",,"",1,"normal",,8,,,
+"Upper","1 Nov 2026, 10:22","1 Nov 2026, 11:27","","Pull Up",,"",2,"normal",,8,,,
+"Upper","1 Nov 2026, 10:22","1 Nov 2026, 11:27","","Chest Supported Incline Row (Dumbbell)",,"",0,"normal",24,10,,,7.5
+"Upper","1 Nov 2026, 10:22","1 Nov 2026, 11:27","","Chest Supported Incline Row (Dumbbell)",,"",1,"normal",24,10,,,8
+"Upper","1 Nov 2026, 10:22","1 Nov 2026, 11:27","","Chest Supported Incline Row (Dumbbell)",,"",2,"normal",24,10,,,7.5
+"Upper","1 Nov 2026, 10:22","1 Nov 2026, 11:27","","Single Leg Romanian Deadlift (Dumbbell)",,"",0,"normal",20,8,,,7
+"Upper","1 Nov 2026, 10:22","1 Nov 2026, 11:27","","Single Leg Romanian Deadlift (Dumbbell)",,"",1,"normal",20,8,,,8
+"Upper","1 Nov 2026, 10:22","1 Nov 2026, 11:27","","Single Leg Romanian Deadlift (Dumbbell)",,"",2,"normal",20,8,,,7.5
+"Upper","1 Nov 2026, 10:22","1 Nov 2026, 11:27","","Face Pull",,"",0,"normal",25,15,,,8
+"Upper","1 Nov 2026, 10:22","1 Nov 2026, 11:27","","Face Pull",,"",1,"normal",25,15,,,8
+"Upper","1 Nov 2026, 10:22","1 Nov 2026, 11:27","","Face Pull",,"",2,"normal",25,15,,,7
+"Upper","1 Nov 2026, 10:22","1 Nov 2026, 11:27","","Hanging Leg Raise",,"",0,"normal",,12,,,
+"Upper","1 Nov 2026, 10:22","1 Nov 2026, 11:27","","Hanging Leg Raise",,"",1,"normal",,12,,,
+"Power + Legs","31 Oct 2026, 18:06","31 Oct 2026, 19:16","","Front Squat",,"",0,"normal",55,5,,,7
+"Power + Legs","31 Oct 2026, 18:06","31 Oct 2026, 19:16","","Front Squat",,"",1,"normal",55,5,,,7
+"Power + Legs","31 Oct 2026, 18:06","31 Oct 2026, 19:16","","Front Squat",,"",2,"normal",55,5,,,7.5
+"Power + Legs","31 Oct 2026, 18:06","31 Oct 2026, 19:16","","Front Squat",,"",3,"normal",55,5,,,7.5
+"Power + Legs","31 Oct 2026, 18:06","31 Oct 2026, 19:16","","Deadlift (Trap bar)",,"",0,"normal",105,5,,,7.5
+"Power + Legs","31 Oct 2026, 18:06","31 Oct 2026, 19:16","","Deadlift (Trap bar)",,"",1,"normal",105,5,,,7
+"Power + Legs","31 Oct 2026, 18:06","31 Oct 2026, 19:16","","Deadlift (Trap bar)",,"",2,"normal",105,5,,,7.5
+"Power + Legs","31 Oct 2026, 18:06","31 Oct 2026, 19:16","","Seated Leg Curl (Machine)",,"",0,"normal",65,8,,,8
+"Power + Legs","31 Oct 2026, 18:06","31 Oct 2026, 19:16","","Seated Leg Curl (Machine)",,"",1,"normal",65,8,,,8
+"Bonus","28 Oct 2026, 11:00","28 Oct 2026, 11:45","","Bench Press (Dumbbell)",,"",0,"normal",28,8,,,7
+"Bonus","28 Oct 2026, 11:00","28 Oct 2026, 11:45","","Bench Press (Dumbbell)",,"",1,"normal",28,8,,,8
+"Bonus","28 Oct 2026, 11:00","28 Oct 2026, 11:45","","Triceps Dip",,"",0,"normal",,10,,,
+"Bonus","28 Oct 2026, 11:00","28 Oct 2026, 11:45","","Triceps Dip",,"",1,"normal",,10,,,
+"Bonus","28 Oct 2026, 11:00","28 Oct 2026, 11:45","","Triceps Dip",,"",2,"normal",,10,,,
+"Lift baselines","24 Oct 2026, 11:15","24 Oct 2026, 12:25","","Overhead Press (Barbell)",,"",0,"normal",47.5,5,,,8
+"Lift baselines","24 Oct 2026, 11:15","24 Oct 2026, 12:25","","Front Squat",,"",0,"normal",70,5,,,8
+"Lift baselines","24 Oct 2026, 11:15","24 Oct 2026, 12:25","","Pull Up (Weighted)",,"",0,"normal",7.5,5,,,8
+"Lift baselines","24 Oct 2026, 11:15","24 Oct 2026, 12:25","","Seated Leg Curl (Machine)",,"",0,"normal",62.5,10,,,7
+"Lift baselines","24 Oct 2026, 11:15","24 Oct 2026, 12:25","","Seated Leg Curl (Machine)",,"",1,"normal",62.5,10,,,7
+"Upper","18 Oct 2026, 10:13","18 Oct 2026, 11:18","","Overhead Press (Barbell)",,"",0,"normal",40,8,,,7.5
+"Upper","18 Oct 2026, 10:13","18 Oct 2026, 11:18","","Overhead Press (Barbell)",,"",1,"normal",40,8,,,7
+"Upper","18 Oct 2026, 10:13","18 Oct 2026, 11:18","","Overhead Press (Barbell)",,"",2,"normal",40,8,,,7.5
+"Upper","18 Oct 2026, 10:13","18 Oct 2026, 11:18","","Overhead Press (Barbell)",,"",3,"normal",40,8,,,7
+"Upper","18 Oct 2026, 10:13","18 Oct 2026, 11:18","","Pull Up (Weighted)",,"",0,"normal",4,6,,,7
+"Upper","18 Oct 2026, 10:13","18 Oct 2026, 11:18","","Pull Up (Weighted)",,"",1,"normal",4,6,,,7.5
+"Upper","18 Oct 2026, 10:13","18 Oct 2026, 11:18","","Pull Up (Weighted)",,"",2,"normal",4,6,,,7
+"Upper","18 Oct 2026, 10:13","18 Oct 2026, 11:18","","Pull Up (Weighted)",,"",3,"normal",4,6,,,7.5
+"Upper","18 Oct 2026, 10:13","18 Oct 2026, 11:18","","Pull Up",,"",0,"normal",,8,,,
+"Upper","18 Oct 2026, 10:13","18 Oct 2026, 11:18","","Pull Up",,"",1,"normal",,8,,,
+"Upper","18 Oct 2026, 10:13","18 Oct 2026, 11:18","","Pull Up",,"",2,"normal",,8,,,
+"Upper","18 Oct 2026, 10:13","18 Oct 2026, 11:18","","Chest Supported Incline Row (Dumbbell)",,"",0,"normal",20,10,,,7.5
+"Upper","18 Oct 2026, 10:13","18 Oct 2026, 11:18","","Chest Supported Incline Row (Dumbbell)",,"",1,"normal",20,10,,,7
+"Upper","18 Oct 2026, 10:13","18 Oct 2026, 11:18","","Chest Supported Incline Row (Dumbbell)",,"",2,"normal",20,10,,,8
+"Upper","18 Oct 2026, 10:13","18 Oct 2026, 11:18","","Single Leg Romanian Deadlift (Dumbbell)",,"",0,"normal",17.5,8,,,7.5
+"Upper","18 Oct 2026, 10:13","18 Oct 2026, 11:18","","Single Leg Romanian Deadlift (Dumbbell)",,"",1,"normal",17.5,8,,,8
+"Upper","18 Oct 2026, 10:13","18 Oct 2026, 11:18","","Single Leg Romanian Deadlift (Dumbbell)",,"",2,"normal",17.5,8,,,7
+"Upper","18 Oct 2026, 10:13","18 Oct 2026, 11:18","","Face Pull",,"",0,"normal",22.5,15,,,7
+"Upper","18 Oct 2026, 10:13","18 Oct 2026, 11:18","","Face Pull",,"",1,"normal",22.5,15,,,7.5
+"Upper","18 Oct 2026, 10:13","18 Oct 2026, 11:18","","Face Pull",,"",2,"normal",22.5,15,,,7.5
+"Upper","18 Oct 2026, 10:13","18 Oct 2026, 11:18","","Bicep Curl (Dumbbell)",,"",0,"normal",12.5,12,,,8
+"Upper","18 Oct 2026, 10:13","18 Oct 2026, 11:18","","Bicep Curl (Dumbbell)",,"",1,"normal",12.5,12,,,7
+"Upper","18 Oct 2026, 10:13","18 Oct 2026, 11:18","","Hanging Leg Raise",,"",0,"normal",,12,,,
+"Upper","18 Oct 2026, 10:13","18 Oct 2026, 11:18","","Hanging Leg Raise",,"",1,"normal",,12,,,
+"Benchmarks + Legs","17 Oct 2026, 10:00","17 Oct 2026, 11:00","","Front Squat",,"",0,"normal",60,5,,,8
+"Benchmarks + Legs","17 Oct 2026, 10:00","17 Oct 2026, 11:00","","Front Squat",,"",1,"normal",60,5,,,7.5
+"Benchmarks + Legs","17 Oct 2026, 10:00","17 Oct 2026, 11:00","","Front Squat",,"",2,"normal",60,5,,,7.5
+"Benchmarks + Legs","17 Oct 2026, 10:00","17 Oct 2026, 11:00","","Deadlift (Trap bar)",,"",0,"normal",85,5,,,7.5
+"Benchmarks + Legs","17 Oct 2026, 10:00","17 Oct 2026, 11:00","","Deadlift (Trap bar)",,"",1,"normal",85,5,,,7.5
+"Benchmarks + Legs","17 Oct 2026, 10:00","17 Oct 2026, 11:00","","Deadlift (Trap bar)",,"",2,"normal",85,5,,,8
+"Benchmarks + Legs","17 Oct 2026, 10:00","17 Oct 2026, 11:00","","Seated Leg Curl (Machine)",,"",0,"normal",65,10,,,7
+"Benchmarks + Legs","17 Oct 2026, 10:00","17 Oct 2026, 11:00","","Seated Leg Curl (Machine)",,"",1,"normal",65,10,,,7.5
+"Upper","11 Oct 2026, 18:01","11 Oct 2026, 19:06","","Overhead Press (Barbell)",,"",0,"normal",35,8,,,7
+"Upper","11 Oct 2026, 18:01","11 Oct 2026, 19:06","","Overhead Press (Barbell)",,"",1,"normal",35,8,,,7
+"Upper","11 Oct 2026, 18:01","11 Oct 2026, 19:06","","Overhead Press (Barbell)",,"",2,"normal",35,8,,,7.5
+"Upper","11 Oct 2026, 18:01","11 Oct 2026, 19:06","","Overhead Press (Barbell)",,"",3,"normal",35,8,,,8
+"Upper","11 Oct 2026, 18:01","11 Oct 2026, 19:06","","Pull Up (Weighted)",,"",0,"normal",4,6,,,7.5
+"Upper","11 Oct 2026, 18:01","11 Oct 2026, 19:06","","Pull Up (Weighted)",,"",1,"normal",4,6,,,7.5
+"Upper","11 Oct 2026, 18:01","11 Oct 2026, 19:06","","Pull Up (Weighted)",,"",2,"normal",4,6,,,7.5
+"Upper","11 Oct 2026, 18:01","11 Oct 2026, 19:06","","Pull Up (Weighted)",,"",3,"normal",4,6,,,8
+"Upper","11 Oct 2026, 18:01","11 Oct 2026, 19:06","","Pull Up",,"",0,"normal",,8,,,
+"Upper","11 Oct 2026, 18:01","11 Oct 2026, 19:06","","Pull Up",,"",1,"normal",,8,,,
+"Upper","11 Oct 2026, 18:01","11 Oct 2026, 19:06","","Pull Up",,"",2,"normal",,8,,,
+"Upper","11 Oct 2026, 18:01","11 Oct 2026, 19:06","","Chest Supported Incline Row (Dumbbell)",,"",0,"normal",20,10,,,7
+"Upper","11 Oct 2026, 18:01","11 Oct 2026, 19:06","","Chest Supported Incline Row (Dumbbell)",,"",1,"normal",20,10,,,7.5
+"Upper","11 Oct 2026, 18:01","11 Oct 2026, 19:06","","Chest Supported Incline Row (Dumbbell)",,"",2,"normal",20,10,,,7.5
+"Upper","11 Oct 2026, 18:01","11 Oct 2026, 19:06","","Single Leg Romanian Deadlift (Dumbbell)",,"",0,"normal",17.5,8,,,7.5
+"Upper","11 Oct 2026, 18:01","11 Oct 2026, 19:06","","Single Leg Romanian Deadlift (Dumbbell)",,"",1,"normal",17.5,8,,,7.5
+"Upper","11 Oct 2026, 18:01","11 Oct 2026, 19:06","","Single Leg Romanian Deadlift (Dumbbell)",,"",2,"normal",17.5,8,,,7
+"Upper","11 Oct 2026, 18:01","11 Oct 2026, 19:06","","Face Pull",,"",0,"normal",22.5,15,,,7.5
+"Upper","11 Oct 2026, 18:01","11 Oct 2026, 19:06","","Face Pull",,"",1,"normal",22.5,15,,,7
+"Upper","11 Oct 2026, 18:01","11 Oct 2026, 19:06","","Face Pull",,"",2,"normal",22.5,15,,,7.5
+"Upper","11 Oct 2026, 18:01","11 Oct 2026, 19:06","","Bicep Curl (Dumbbell)",,"",0,"normal",12.5,12,,,7.5
+"Upper","11 Oct 2026, 18:01","11 Oct 2026, 19:06","","Bicep Curl (Dumbbell)",,"",1,"normal",12.5,12,,,7.5
+"Upper","11 Oct 2026, 18:01","11 Oct 2026, 19:06","","Hanging Leg Raise",,"",0,"normal",,12,,,
+"Upper","11 Oct 2026, 18:01","11 Oct 2026, 19:06","","Hanging Leg Raise",,"",1,"normal",,12,,,
+"Benchmarks + Legs","10 Oct 2026, 17:29","10 Oct 2026, 18:39","","Front Squat",,"",0,"normal",55,8,,,7.5
+"Benchmarks + Legs","10 Oct 2026, 17:29","10 Oct 2026, 18:39","","Front Squat",,"",1,"normal",55,8,,,7.5
+"Benchmarks + Legs","10 Oct 2026, 17:29","10 Oct 2026, 18:39","","Front Squat",,"",2,"normal",55,8,,,7
+"Benchmarks + Legs","10 Oct 2026, 17:29","10 Oct 2026, 18:39","","Front Squat",,"",3,"normal",55,8,,,8
+"Benchmarks + Legs","10 Oct 2026, 17:29","10 Oct 2026, 18:39","","Deadlift (Trap bar)",,"",0,"normal",85,5,,,7
+"Benchmarks + Legs","10 Oct 2026, 17:29","10 Oct 2026, 18:39","","Deadlift (Trap bar)",,"",1,"normal",85,5,,,7.5
+"Benchmarks + Legs","10 Oct 2026, 17:29","10 Oct 2026, 18:39","","Deadlift (Trap bar)",,"",2,"normal",85,5,,,7
+"Benchmarks + Legs","10 Oct 2026, 17:29","10 Oct 2026, 18:39","","Seated Leg Curl (Machine)",,"",0,"normal",65,10,,,7.5
+"Benchmarks + Legs","10 Oct 2026, 17:29","10 Oct 2026, 18:39","","Seated Leg Curl (Machine)",,"",1,"normal",65,10,,,7
+"Bonus","7 Oct 2026, 10:25","7 Oct 2026, 11:15","","Bench Press (Dumbbell)",,"",0,"normal",25,10,,,7
+"Bonus","7 Oct 2026, 10:25","7 Oct 2026, 11:15","","Bench Press (Dumbbell)",,"",1,"normal",25,10,,,7.5
+"Bonus","7 Oct 2026, 10:25","7 Oct 2026, 11:15","","Bench Press (Dumbbell)",,"",2,"normal",25,10,,,7.5
+"Bonus","7 Oct 2026, 10:25","7 Oct 2026, 11:15","","Lateral Raise (Dumbbell)",,"",0,"normal",8,15,,,8
+"Bonus","7 Oct 2026, 10:25","7 Oct 2026, 11:15","","Lateral Raise (Dumbbell)",,"",1,"normal",8,15,,,7
+"Bonus","7 Oct 2026, 10:25","7 Oct 2026, 11:15","","Lateral Raise (Dumbbell)",,"",2,"normal",8,15,,,7
+"Bonus","7 Oct 2026, 10:25","7 Oct 2026, 11:15","","Triceps Rope Pushdown",,"",0,"normal",20,15,,,8
+"Bonus","7 Oct 2026, 10:25","7 Oct 2026, 11:15","","Triceps Rope Pushdown",,"",1,"normal",20,15,,,8
+"Bonus","7 Oct 2026, 10:25","7 Oct 2026, 11:15","","Triceps Rope Pushdown",,"",2,"normal",20,15,,,7
+"Upper @ RPE 6","4 Oct 2026, 11:07","4 Oct 2026, 12:12","","Overhead Press (Barbell)",,"",0,"normal",35,8,,,7
+"Upper @ RPE 6","4 Oct 2026, 11:07","4 Oct 2026, 12:12","","Overhead Press (Barbell)",,"",1,"normal",35,8,,,7.5
+"Upper @ RPE 6","4 Oct 2026, 11:07","4 Oct 2026, 12:12","","Pull Up (Weighted)",,"",0,"normal",4,6,,,7
+"Upper @ RPE 6","4 Oct 2026, 11:07","4 Oct 2026, 12:12","","Pull Up (Weighted)",,"",1,"normal",4,6,,,7
+"Upper @ RPE 6","4 Oct 2026, 11:07","4 Oct 2026, 12:12","","Chest Supported Incline Row (Dumbbell)",,"",0,"normal",20,10,,,7
+"Upper @ RPE 6","4 Oct 2026, 11:07","4 Oct 2026, 12:12","","Chest Supported Incline Row (Dumbbell)",,"",1,"normal",20,10,,,7.5
+"Upper @ RPE 6","4 Oct 2026, 11:07","4 Oct 2026, 12:12","","Single Leg Romanian Deadlift (Dumbbell)",,"",0,"normal",16,8,,,8
+"Upper @ RPE 6","4 Oct 2026, 11:07","4 Oct 2026, 12:12","","Single Leg Romanian Deadlift (Dumbbell)",,"",1,"normal",16,8,,,7.5
+"Legs @ RPE 6, no power block","3 Oct 2026, 18:43","3 Oct 2026, 19:43","","Nordic Hamstring Curl",,"",0,"normal",,6,,,
+"Legs @ RPE 6, no power block","3 Oct 2026, 18:43","3 Oct 2026, 19:43","","Nordic Hamstring Curl",,"",1,"normal",,6,,,
+"Legs @ RPE 6, no power block","3 Oct 2026, 18:43","3 Oct 2026, 19:43","","Front Squat",,"",0,"normal",55,8,,,7.5
+"Legs @ RPE 6, no power block","3 Oct 2026, 18:43","3 Oct 2026, 19:43","","Front Squat",,"",1,"normal",55,8,,,7.5
+"Legs @ RPE 6, no power block","3 Oct 2026, 18:43","3 Oct 2026, 19:43","","Deadlift (Trap bar)",,"",0,"normal",85,5,,,7
+"Legs @ RPE 6, no power block","3 Oct 2026, 18:43","3 Oct 2026, 19:43","","Deadlift (Trap bar)",,"",1,"normal",85,5,,,8
+"Legs @ RPE 6, no power block","3 Oct 2026, 18:43","3 Oct 2026, 19:43","","Farmers Walk",,"",0,"normal",28,40,,,8
+"Bonus @ RPE 6","30 Sep 2026, 11:44","30 Sep 2026, 12:34","","Bench Press (Dumbbell)",,"",0,"normal",24,10,,,7.5
+"Bonus @ RPE 6","30 Sep 2026, 11:44","30 Sep 2026, 12:34","","Bench Press (Dumbbell)",,"",1,"normal",24,10,,,7.5

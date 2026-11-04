@@ -1,0 +1,4 @@
+# fixture for tests/test_kunto_*.py: same layout as pull_garmin.py writes (one comment line, then the header)
+date,vo2max,vo2max_date,pred_5k,pred_10k,pred_hm,lt_hr,lt_date
+2026-09-28,54.1,2026-09-26,19:11,43:22,1:41:59,165,2026-09-26
+2026-10-05,54.4,2026-10-03,19:05,43:10,1:41:30,165,2026-09-26

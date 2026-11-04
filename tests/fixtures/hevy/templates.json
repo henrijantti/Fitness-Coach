@@ -1,0 +1,11 @@
+[
+ {"id": "A0000000", "title": "Pull Up", "is_custom": false},
+ {"id": "A000000A", "title": "Pull Up (Weighted)", "is_custom": false},
+ {"id": "A0000001", "title": "Bench Press (Barbell)", "is_custom": false},
+ {"id": "A0000008", "title": "Lat Pulldown (Cable)", "is_custom": false},
+ {"id": "B0000001", "title": "Hammer-Grip Pull-Up", "is_custom": true},
+ {"id": "B0000002", "title": "Trap Bar Deadlift", "is_custom": false},
+ {"id": "B0000003", "title": "Deadlift (Barbell)", "is_custom": false},
+ {"id": "B0000004", "title": "Romanian Deadlift (Barbell)", "is_custom": false},
+ {"id": "B0000005", "title": "Squat (Barbell)", "is_custom": false}
+]

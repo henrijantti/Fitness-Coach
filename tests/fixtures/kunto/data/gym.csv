@@ -1,0 +1,12 @@
+"title","start_time","end_time","description","exercise_title","superset_id","exercise_notes","set_index","set_type","weight_kg","reps","distance_km","duration_seconds","rpe"
+"Benchmark tests","25 Sep 2026, 12:14","25 Sep 2026, 13:44","","Pull Up",,"",0,"warmup",,6,,,
+"Benchmark tests","25 Sep 2026, 12:14","25 Sep 2026, 13:44","","Pull Up",,"",1,"normal",,14,,,
+"Benchmark tests","25 Sep 2026, 12:14","25 Sep 2026, 13:44","","Bench Press (Barbell)",,"",0,"warmup",80,4,,,
+"Benchmark tests","25 Sep 2026, 12:14","25 Sep 2026, 13:44","","Bench Press (Barbell)",,"",1,"normal",100,5,,,8
+"Legs","3 Oct 2026, 10:00","3 Oct 2026, 11:00","","Squat (Barbell)",,"",0,"warmup",60,5,,,
+"Legs","3 Oct 2026, 10:00","3 Oct 2026, 11:00","","Squat (Barbell)",,"",1,"normal",100,5,,,8
+"Legs","3 Oct 2026, 10:00","3 Oct 2026, 11:00","","Squat (Barbell)",,"",2,"normal",102.5,3,,,8.5
+"Legs","3 Oct 2026, 10:00","3 Oct 2026, 11:00","","Squat (Barbell)",,"",3,"dropset",80,10,,,
+"Legs","3 Oct 2026, 10:00","3 Oct 2026, 11:00","","Pull Up (Weighted)",,"",0,"normal",15,5,,,
+"Legs","3 Oct 2026, 10:00","3 Oct 2026, 11:00","","Pull Up (Weighted)",,"",1,"normal",20,3,,,
+"Legs","3 Oct 2026, 10:00","3 Oct 2026, 11:00","","Pull Up",,"",0,"failure",,12,,,

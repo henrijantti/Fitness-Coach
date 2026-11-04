@@ -1,0 +1,3414 @@
+{
+  "meta": {
+    "name": "Sample Training Plan",
+    "created": "2026-09-27",
+    "base": "synthetic sample for the public showcase",
+    "governance": "targets change only with the athlete's approval; decisions are logged",
+    "week1": "2026-09-28",
+    "weekend_time": "Sat and Sun 60–70 min each"
+  },
+  "events": [
+    {
+      "name": "Ski race 25 km",
+      "date": "2027-03-06",
+      "priority": "optional",
+      "prep": "Wed SkiErg + holiday skiing; max 3 ski sessions (≤70′) in Jan–Feb"
+    },
+    {
+      "name": "Hybrid race, singles",
+      "date": "2027-05-22",
+      "priority": "medium",
+      "target": "<1:20 (stretch <1:15)"
+    },
+    {
+      "name": "Functional fitness event",
+      "date": "2027-08-14/08-15",
+      "priority": "low",
+      "target": "complete uninjured, lifts RPE ≤9"
+    },
+    {
+      "name": "Cooper test",
+      "date": "2027-09-18",
+      "priority": "high",
+      "target": "3,100 m (stretch 3,200 m)"
+    }
+  ],
+  "targets": [
+    [
+      "Cooper",
+      "est. 2,950 m",
+      "3,100 m",
+      "3,200 m"
+    ],
+    [
+      "Strict pull-ups",
+      "Sep 25",
+      "+2",
+      "+3"
+    ],
+    [
+      "Weighted pull-up",
+      "Oct 24",
+      "+12.5 kg × 5",
+      "+15 kg × 5"
+    ],
+    [
+      "Strict OHP",
+      "Oct 24 (50 kg × 5)",
+      "+8%: 55 kg × 5",
+      "+10%: 55 kg × 5"
+    ],
+    [
+      "Front squat",
+      "Oct 24",
+      "70 kg × 5",
+      "75 kg × 5"
+    ],
+    [
+      "Broad jump",
+      "Oct 17",
+      "+5 cm",
+      "+8 cm"
+    ],
+    [
+      "Ski watts",
+      "Oct 17",
+      "+5%",
+      "+8%"
+    ],
+    [
+      "Hybrid race",
+      "—",
+      "<1:20",
+      "<1:15"
+    ]
+  ],
+  "zones": {
+    "easy": "HR ≤140 · pace free",
+    "threshold": "HR 160–168 · ~4:30/km (pack +10–15 s)",
+    "5k_pace": "~4:15/km (sample)",
+    "cooper": "90 s/400 m (3,200 m)",
+    "hr_max": "185 (sample)"
+  },
+  "weeks": [
+    {
+      "week": 1,
+      "start": "2026-09-28",
+      "end": "2026-10-04",
+      "block": "0 Re-entry",
+      "run_km": "10–15",
+      "key": "",
+      "note": "Extra-easy after the test block.",
+      "flags": [
+        "deload"
+      ],
+      "template": "re-entry"
+    },
+    {
+      "week": 2,
+      "start": "2026-10-05",
+      "end": "2026-10-11",
+      "block": "1 Athletic base",
+      "run_km": "15–25",
+      "key": "Sat 10 Oct: broad jump + 10-s SkiErg peak watts",
+      "note": "",
+      "flags": [
+        "test"
+      ],
+      "template": "in-season-b1",
+      "overrides": {
+        "wed": [
+          {
+            "kind": "gym",
+            "title": "Bonus",
+            "focus": "upper",
+            "chips": [
+              "MB rotational wall throw 3×3/side · ~3 kg",
+              "DB bench 3×8–10 · 25 kg each",
+              "DB lateral raise 3×12–15 · 8 kg each",
+              "rope pushdown 3×12–15 · 20 kg",
+              "external rotation 2×15/side (cable or band) · ~2 kg",
+              "SkiErg 8 × 30 s / 30 s (Nov–Feb: alternate weeks 3 × 5′ steady double poling)"
+            ],
+            "min": 50,
+            "optional": true,
+            "first_to_go": true
+          },
+          {
+            "kind": "run",
+            "title": "Run home 5 km easy",
+            "chips": [
+              "HR ≤140"
+            ],
+            "min": 30,
+            "optional": true,
+            "first_to_go": true
+          }
+        ],
+        "thu": [
+          {
+            "kind": "run",
+            "title": "Run commute, easy 5–8 km",
+            "chips": [
+              "the mileage floor"
+            ],
+            "min": 40
+          }
+        ],
+        "sat": [
+          {
+            "kind": "test",
+            "title": "Benchmarks + Legs",
+            "chips": [
+              "standing broad jump, best of 3",
+              "10-s SkiErg sprint, best of 3 (2–3 min rest), same damper each time: record peak and 10-s average watts",
+              "then front squat 4×6–8 · 55 kg",
+              "trap bar 3×5 · ~85 kg, a new lift: start light",
+              "seated leg curl 2×8–10 · 65 kg",
+              "core block, 2 rounds: Copenhagen side plank 20–30 s/side · Pallof press 10/side · ab wheel 8–10 · suitcase carry 40 m/side"
+            ],
+            "min": 70,
+            "hard": true
+          }
+        ],
+        "sun": [
+          {
+            "kind": "gym",
+            "title": "Upper",
+            "focus": "upper",
+            "chips": [
+              "strict OHP 4×6–8 first · 35 kg",
+              "weighted pull-ups 4×5–6 · +4 kg",
+              "body-weight pull-ups 2 sets, 2 reps short of failure",
+              "chest-supported DB row 3×10 · 20 kg each",
+              "single-leg RDL 3×8/side, one dumbbell · ~17.5 kg",
+              "face pull 3×12–15 · 22.5 kg",
+              "DB curl 2×10–12 · 12.5 kg each",
+              "hanging leg raises 2×8–12"
+            ],
+            "min": 65,
+            "hard": true
+          }
+        ]
+      }
+    },
+    {
+      "week": 3,
+      "start": "2026-10-12",
+      "end": "2026-10-18",
+      "block": "1 Athletic base",
+      "run_km": "15–25",
+      "key": "Sat 17 Oct: broad jump + 10-s SkiErg peak watts",
+      "note": "",
+      "flags": [
+        "test"
+      ],
+      "template": "in-season-b1",
+      "overrides": {
+        "thu": [
+          {
+            "kind": "run",
+            "title": "Run commute, easy 5–8 km",
+            "chips": [
+              "the mileage floor"
+            ],
+            "min": 40
+          }
+        ],
+        "sat": [
+          {
+            "kind": "gym",
+            "title": "Benchmarks + Legs",
+            "focus": "legs",
+            "chips": [
+              "standing broad jump, best of 3",
+              "10-s SkiErg sprint, best of 3 (2–3 min rest), same damper each time: record peak and 10-s average watts",
+              "front squat 3×5 @ RPE 6–7 (rehearsal for the Oct 24 baseline)",
+              "trap bar 3×5 · ~85 kg, a new lift: start light",
+              "seated leg curl 2×8–10 · 65 kg",
+              "core block, 1 round: Copenhagen side plank 20–30 s/side · Pallof press 10/side · ab wheel 8–10 · suitcase carry 40 m/side"
+            ],
+            "min": 60,
+            "hard": true
+          }
+        ],
+        "sun": [
+          {
+            "kind": "gym",
+            "title": "Upper",
+            "focus": "upper",
+            "chips": [
+              "strict OHP 4×6–8 first · 40 kg",
+              "weighted pull-ups 4×5–6 · +4 kg",
+              "body-weight pull-ups 2 sets, 2 reps short of failure",
+              "chest-supported DB row 3×10 · 20 kg each",
+              "single-leg RDL 3×8/side, one dumbbell · ~17.5 kg",
+              "face pull 3×12–15 · 22.5 kg",
+              "DB curl 2×10–12 · 12.5 kg each",
+              "hanging leg raises 2×8–12"
+            ],
+            "min": 65,
+            "hard": true
+          }
+        ]
+      }
+    },
+    {
+      "week": 4,
+      "start": "2026-10-19",
+      "end": "2026-10-25",
+      "block": "1 Athletic base",
+      "run_km": "15–25",
+      "key": "Thu 22 Oct: Cooper #1 · Sat 24 Oct: lift baselines @ RPE 8",
+      "note": "",
+      "flags": [
+        "test"
+      ],
+      "template": "in-season-b1",
+      "overrides": {
+        "wed": [
+          {
+            "kind": "rest",
+            "title": "Rest",
+            "chips": [
+              "test week: no Bonus gym, no run home"
+            ]
+          }
+        ],
+        "thu": [
+          {
+            "kind": "test",
+            "title": "Cooper #1",
+            "chips": [
+              "400 m track, 12 minutes, metres recorded",
+              "WU 15′ easy + drills + 2 × 300 m at test pace + strides",
+              "laps 1–3 at 97 s, then by feel; kick in the last 400 m",
+              "the measured baseline: section 9 paces are re-set from it"
+            ],
+            "min": 45,
+            "hard": true
+          }
+        ],
+        "sat": [
+          {
+            "kind": "test",
+            "title": "Lift baselines",
+            "chips": [
+              "strict OHP: work up to one top set of 5 @ RPE 8",
+              "front squat: work up to one top set of 5 @ RPE 8",
+              "weighted pull-up: work up to one top set of 5 @ RPE 8 (log body weight)",
+              "seated leg curl 2×8–10",
+              "core block, 1 round: Copenhagen side plank 20–30 s/side · Pallof press 10/side · ab wheel 8–10 · suitcase carry 40 m/side"
+            ],
+            "min": 70,
+            "hard": true,
+            "warmup": "lift-test"
+          }
+        ],
+        "sun": [
+          {
+            "kind": "gym",
+            "title": "Upper",
+            "note": "RPE ≤7 all session (the day after the baselines); loads from Saturday's top sets",
+            "focus": "upper",
+            "chips": [
+              "strict OHP 4×6–8 first",
+              "weighted pull-ups 4×5–6",
+              "body-weight pull-ups 2 sets, 2 reps short of failure",
+              "chest-supported DB row 3×10",
+              "single-leg RDL 3×8/side, one dumbbell",
+              "face pull 3×12–15",
+              "DB curl 2×10–12",
+              "hanging leg raises 2×8–12"
+            ],
+            "min": 65,
+            "hard": true
+          }
+        ]
+      }
+    },
+    {
+      "week": 5,
+      "start": "2026-10-26",
+      "end": "2026-11-01",
+      "block": "1 Athletic base",
+      "run_km": "15–25",
+      "key": "",
+      "note": "Intro: learn the new moves light; contrast and loaded jumps start in week 7. Trap bar: find a 3×5 at RPE 7.",
+      "flags": [],
+      "template": "athletic-base",
+      "overrides": {
+        "wed": [
+          {
+            "kind": "gym",
+            "title": "Bonus",
+            "note": "no jumps or sprints: the day after floorball",
+            "focus": "upper",
+            "chips": [
+              "MB rotational wall throw 3×3/side",
+              "MB chest pass to the wall 3×5",
+              "DB bench 2×6–8, fast up",
+              "dips 3×6–10 (stop at upper arm parallel)",
+              "external rotation 2×15/side (cable or band)",
+              "SkiErg 6 × 15 s hard / 45 s easy, damper 8; best rep's peak to Hevy, reps = W"
+            ],
+            "min": 45,
+            "optional": true,
+            "first_to_go": true
+          },
+          {
+            "kind": "run",
+            "title": "Run home 5 km easy",
+            "chips": [
+              "HR ≤140"
+            ],
+            "min": 30,
+            "optional": true,
+            "first_to_go": true
+          }
+        ],
+        "thu": [
+          {
+            "kind": "run",
+            "title": "Run commute, easy 5–8 km",
+            "chips": [
+              "the mileage floor"
+            ],
+            "min": 40
+          },
+          {
+            "kind": "gym",
+            "title": "Speed + jumps, lunch",
+            "note": "fresh, before anything tiring; skip in a deload or test week and within 48 h before a match",
+            "focus": "full",
+            "chips": [
+              "flying sprint 3 × 10 m, 20 m build-in, 2–3′ walk back",
+              "box jump 2×3 (step down)"
+            ],
+            "min": 25,
+            "hard": true,
+            "optional": true,
+            "warmup": "jumps-sprints"
+          }
+        ],
+        "sat": [
+          {
+            "kind": "gym",
+            "title": "Power + Legs",
+            "focus": "legs",
+            "chips": [
+              "jump height by phone app, best of 3, hands on hips; to Hevy, reps = cm",
+              "standing broad jump, best of 3, by tape; to Hevy, reps = cm",
+              "power block 20′: sled push 3 × 15 m @ ~50% BW · 4 × 15 m accelerations · lateral bounds 3×4/side, stick · drop to stick landing 2×3, low box",
+              "front rack hold 2 × 20–30 s, light, fingertip grip",
+              "front squat 4×3–5, fast up; fingertip grip, elbows high; straps if wrists hurt · 55 kg",
+              "trap bar 3×5 @ RPE 7, find the load",
+              "seated leg curl 2×8, 3–4 s lowering",
+              "core block, 2 rounds: Copenhagen side plank 20–30 s/side · Pallof press 10/side · ab wheel 8–10 · suitcase carry 40 m/side"
+            ],
+            "min": 70,
+            "hard": true
+          }
+        ],
+        "sun": [
+          {
+            "kind": "gym",
+            "title": "Upper",
+            "focus": "upper",
+            "chips": [
+              "MB overhead throw or slam 3×3, first",
+              "strict OHP 4×3–5, right after the throws · 45 kg",
+              "weighted pull-ups 4×5–6 · +6 kg",
+              "body-weight pull-ups 2 sets, 2 reps short of failure",
+              "chest-supported DB row 3×10",
+              "single-leg RDL 3×8/side, one dumbbell",
+              "face pull 3×12–15",
+              "wrist curl + reverse wrist curl 2×15, light, through Sun Nov 22, then off if the front squat feels fine",
+              "hanging leg raises 2×8–12"
+            ],
+            "min": 65,
+            "hard": true
+          }
+        ]
+      }
+    },
+    {
+      "week": 6,
+      "start": "2026-11-02",
+      "end": "2026-11-08",
+      "block": "1 Athletic base",
+      "run_km": "15–25",
+      "key": "Sun 8 Nov: League games 11:00 + 14:00",
+      "note": "Deload: sets −40% at the same loads, no Thursday speed, floorball stays. Confirmed at the Nov 1 close.",
+      "flags": [
+        "deload"
+      ],
+      "template": "athletic-base",
+      "overrides": {
+        "wed": [
+          {
+            "kind": "gym",
+            "title": "Bonus",
+            "note": "no jumps or sprints: the day after floorball",
+            "focus": "upper",
+            "chips": [
+              "MB rotational wall throw 2×3/side",
+              "MB chest pass to the wall 2×5",
+              "DB bench 1×6–8, fast up",
+              "dips 2×6–10 (stop at upper arm parallel)",
+              "external rotation 1×15/side (cable or band)",
+              "SkiErg 4 × 15 s hard / 45 s easy, damper 8; best rep's peak to Hevy, reps = W"
+            ],
+            "min": 45,
+            "optional": true,
+            "first_to_go": true
+          },
+          {
+            "kind": "run",
+            "title": "Run home 5 km easy",
+            "chips": [
+              "HR ≤140"
+            ],
+            "min": 30,
+            "optional": true,
+            "first_to_go": true
+          }
+        ],
+        "thu": [
+          {
+            "kind": "run",
+            "title": "Run commute, easy 5–8 km",
+            "chips": [
+              "the mileage floor"
+            ],
+            "min": 40
+          }
+        ],
+        "sat": [
+          {
+            "kind": "gym",
+            "title": "Legs + Upper",
+            "focus": "full",
+            "note": "Sunday games: no power block or sprints today; Sunday's deload upper merged in",
+            "chips": [
+              "jump height by phone app, best of 3, hands on hips; to Hevy, reps = cm",
+              "standing broad jump, best of 3, by tape; to Hevy, reps = cm",
+              "front rack hold 1 × 20–30 s, light, fingertip grip",
+              "front squat 2×3, technique, fast up; fingertip grip, elbows high; straps if wrists hurt · 60 kg",
+              "trap bar 2×3, technique, light",
+              "strict OHP 2×3–5 · 42.5 kg",
+              "weighted pull-ups 2×5–6 · +8 kg",
+              "seated leg curl 1×8, 3–4 s lowering",
+              "core block, 1 round: Copenhagen side plank 20–30 s/side · Pallof press 10/side · ab wheel 8–10 · suitcase carry 40 m/side"
+            ],
+            "min": 65,
+            "hard": true
+          }
+        ],
+        "sun": [
+          {
+            "kind": "floorball",
+            "title": "League games 11:00 + 14:00",
+            "note": "two league games; no gym today",
+            "min": 120,
+            "hard": true
+          }
+        ]
+      }
+    },
+    {
+      "week": 7,
+      "start": "2026-11-09",
+      "end": "2026-11-15",
+      "block": "1 Athletic base",
+      "run_km": "15–25",
+      "key": "",
+      "note": "",
+      "flags": [],
+      "template": "athletic-base",
+      "overrides": {
+        "wed": [
+          {
+            "kind": "gym",
+            "title": "Bonus",
+            "note": "no jumps or sprints: the day after floorball",
+            "focus": "upper",
+            "chips": [
+              "MB rotational wall throw 3×3/side",
+              "MB chest pass to the wall 3×5",
+              "DB bench 2×6–8, fast up",
+              "dips 3×6–10 (stop at upper arm parallel)",
+              "external rotation 2×15/side (cable or band)",
+              "SkiErg 8 × 15 s hard / 45 s easy, damper 8; best rep's peak to Hevy, reps = W"
+            ],
+            "min": 45,
+            "optional": true,
+            "first_to_go": true
+          },
+          {
+            "kind": "run",
+            "title": "Run home 5 km easy",
+            "chips": [
+              "HR ≤140"
+            ],
+            "min": 30,
+            "optional": true,
+            "first_to_go": true
+          }
+        ],
+        "thu": [
+          {
+            "kind": "run",
+            "title": "Run commute, easy 5–8 km",
+            "chips": [
+              "the mileage floor"
+            ],
+            "min": 40
+          },
+          {
+            "kind": "gym",
+            "title": "Speed + jumps, lunch",
+            "note": "fresh, before anything tiring; skip in a deload or test week and within 48 h before a match",
+            "focus": "full",
+            "chips": [
+              "flying sprint 4 × 20 m, 20 m build-in, 2–3′ walk back",
+              "box jump 3×3 (step down)"
+            ],
+            "min": 25,
+            "hard": true,
+            "optional": true,
+            "warmup": "jumps-sprints"
+          }
+        ],
+        "sat": [
+          {
+            "kind": "gym",
+            "title": "Power + Legs",
+            "focus": "legs",
+            "chips": [
+              "jump height by phone app, best of 3, hands on hips; to Hevy, reps = cm",
+              "standing broad jump, best of 3, by tape; to Hevy, reps = cm",
+              "power block 20′: sled push 3 × 15 m @ ~55% BW · 4 × 15 m accelerations · lateral bounds 3×4/side, stick · drop to stick landing 2×3, higher box",
+              "front rack hold 2 × 20–30 s, light, fingertip grip",
+              "front squat 4×3–5, fast up, 3 box jumps after each set; fingertip grip, elbows high; straps if wrists hurt",
+              "trap bar 3×5",
+              "loaded jump 3×3 (trap bar, light)",
+              "seated leg curl 2×8–10, 3–4 s lowering",
+              "core block, 2 rounds: Copenhagen side plank 20–30 s/side · Pallof press 10/side · ab wheel 8–10 · suitcase carry 40 m/side"
+            ],
+            "min": 70,
+            "hard": true
+          }
+        ]
+      }
+    },
+    {
+      "week": 8,
+      "start": "2026-11-16",
+      "end": "2026-11-22",
+      "block": "1 Athletic base",
+      "run_km": "15–25",
+      "key": "",
+      "note": "",
+      "flags": [],
+      "template": "athletic-base",
+      "overrides": {
+        "wed": [
+          {
+            "kind": "gym",
+            "title": "Bonus",
+            "note": "no jumps or sprints: the day after floorball",
+            "focus": "upper",
+            "chips": [
+              "MB rotational wall throw 3×3/side",
+              "MB chest pass to the wall 3×5",
+              "DB bench 2×6–8, fast up",
+              "dips 3×6–10 (stop at upper arm parallel)",
+              "external rotation 2×15/side (cable or band)",
+              "SkiErg 8 × 15 s hard / 45 s easy, damper 8; best rep's peak to Hevy, reps = W"
+            ],
+            "min": 45,
+            "optional": true,
+            "first_to_go": true
+          },
+          {
+            "kind": "run",
+            "title": "Run home 5 km easy",
+            "chips": [
+              "HR ≤140"
+            ],
+            "min": 30,
+            "optional": true,
+            "first_to_go": true
+          }
+        ],
+        "thu": [
+          {
+            "kind": "run",
+            "title": "Run commute, easy 5–8 km",
+            "chips": [
+              "the mileage floor"
+            ],
+            "min": 40
+          },
+          {
+            "kind": "gym",
+            "title": "Speed + jumps, lunch",
+            "note": "fresh, before anything tiring; skip in a deload or test week and within 48 h before a match",
+            "focus": "full",
+            "chips": [
+              "flying sprint 5 × 20 m, 20 m build-in, 2–3′ walk back",
+              "box jump 4×3 (step down)",
+              "hurdle hops 2×5"
+            ],
+            "min": 25,
+            "hard": true,
+            "optional": true,
+            "warmup": "jumps-sprints"
+          }
+        ],
+        "sat": [
+          {
+            "kind": "gym",
+            "title": "Power + Legs",
+            "focus": "legs",
+            "chips": [
+              "jump height by phone app, best of 3, hands on hips; to Hevy, reps = cm",
+              "standing broad jump, best of 3, by tape; to Hevy, reps = cm",
+              "power block 20′: sled push 4 × 15 m @ ~55% BW · 5 × 15 m accelerations · lateral bounds 3×5/side, stick · 3-step stop from 10 m 3×2",
+              "front rack hold 2 × 20–30 s, light, fingertip grip",
+              "front squat 4×3–5, fast up, 3 box jumps after each set; fingertip grip, elbows high; straps if wrists hurt",
+              "trap bar 3×5",
+              "loaded jump 3×3 (trap bar, light)",
+              "seated leg curl 2×10, 3–4 s lowering",
+              "core block, 2 rounds: Copenhagen side plank 20–30 s/side · Pallof press 10/side · ab wheel 8–10 · suitcase carry 40 m/side"
+            ],
+            "min": 70,
+            "hard": true
+          }
+        ]
+      }
+    },
+    {
+      "week": 9,
+      "start": "2026-11-23",
+      "end": "2026-11-29",
+      "block": "1 Athletic base",
+      "run_km": "15–25",
+      "key": "Sun 29 Nov: League games 12:00 + 15:00",
+      "note": "",
+      "flags": [],
+      "template": "athletic-base",
+      "overrides": {
+        "wed": [
+          {
+            "kind": "gym",
+            "title": "Bonus",
+            "note": "no jumps or sprints: the day after floorball",
+            "focus": "upper",
+            "chips": [
+              "MB rotational wall throw 3×3/side",
+              "MB chest pass to the wall 3×5",
+              "DB bench 2×6–8, fast up",
+              "dips 3×6–10 (stop at upper arm parallel)",
+              "external rotation 2×15/side (cable or band)",
+              "SkiErg 10 × 15 s hard / 45 s easy, damper 8; best rep's peak to Hevy, reps = W"
+            ],
+            "min": 45,
+            "optional": true,
+            "first_to_go": true
+          },
+          {
+            "kind": "run",
+            "title": "Run home 5 km easy",
+            "chips": [
+              "HR ≤140"
+            ],
+            "min": 30,
+            "optional": true,
+            "first_to_go": true
+          }
+        ],
+        "thu": [
+          {
+            "kind": "run",
+            "title": "Run commute, easy 5–8 km",
+            "chips": [
+              "the mileage floor"
+            ],
+            "min": 40
+          },
+          {
+            "kind": "gym",
+            "title": "Speed + jumps, lunch",
+            "note": "Saturday games: the athleticism check comes here; fresh, before anything tiring",
+            "focus": "full",
+            "chips": [
+              "jump height by phone app, best of 3, hands on hips; to Hevy, reps = cm",
+              "standing broad jump, best of 3, by tape; to Hevy, reps = cm",
+              "flying sprint 6 × 20 m, 20 m build-in, 2–3′ walk back",
+              "box jump 4×3 (step down)",
+              "hurdle hops 3×5"
+            ],
+            "min": 25,
+            "hard": true,
+            "optional": true,
+            "warmup": "jumps-sprints"
+          }
+        ],
+        "fri": [
+          {
+            "kind": "run",
+            "title": "Run in 5 km very easy, or transit",
+            "chips": [
+              "Saturday games",
+              "15 min mobility, wrist and lat-triceps stretches included"
+            ],
+            "min": 40,
+            "optional": true,
+            "first_to_go": true
+          }
+        ],
+        "sat": [
+          {
+            "kind": "gym",
+            "title": "Legs + Upper",
+            "focus": "full",
+            "note": "the day after games: no power block or sprints; legs 3×5 @ RPE 7, merged with upper",
+            "chips": [
+              "front rack hold 1 × 20–30 s, light, fingertip grip",
+              "front squat 3×5 @ RPE 7; fingertip grip, elbows high; straps if wrists hurt",
+              "trap bar 3×5 @ RPE 7",
+              "strict OHP 3×5",
+              "weighted pull-ups 3×5",
+              "seated leg curl 2×8–10, 3–4 s lowering",
+              "core block, 1 round: Copenhagen side plank 20–30 s/side · Pallof press 10/side · ab wheel 8–10 · suitcase carry 40 m/side"
+            ],
+            "min": 70,
+            "hard": true
+          }
+        ],
+        "sun": [
+          {
+            "kind": "floorball",
+            "title": "League games 12:00 + 15:00",
+            "note": "two league games; no gym today",
+            "min": 120,
+            "hard": true
+          }
+        ]
+      }
+    },
+    {
+      "week": 10,
+      "start": "2026-11-30",
+      "end": "2026-12-06",
+      "block": "1 Athletic base",
+      "run_km": "15–25",
+      "key": "",
+      "note": "",
+      "flags": [],
+      "template": "athletic-base",
+      "overrides": {
+        "wed": [
+          {
+            "kind": "gym",
+            "title": "Bonus",
+            "note": "no jumps or sprints: the day after floorball",
+            "focus": "upper",
+            "chips": [
+              "MB rotational wall throw 3×3/side",
+              "MB chest pass to the wall 3×5",
+              "DB bench 2×6–8, fast up",
+              "dips 3×6–10 (stop at upper arm parallel)",
+              "external rotation 2×15/side (cable or band)",
+              "SkiErg 10 × 15 s hard / 45 s easy, damper 8; best rep's peak to Hevy, reps = W"
+            ],
+            "min": 45,
+            "optional": true,
+            "first_to_go": true
+          },
+          {
+            "kind": "run",
+            "title": "Run home 5 km easy",
+            "chips": [
+              "HR ≤140"
+            ],
+            "min": 30,
+            "optional": true,
+            "first_to_go": true
+          }
+        ],
+        "thu": [
+          {
+            "kind": "run",
+            "title": "Run commute, easy 5–8 km",
+            "chips": [
+              "the mileage floor"
+            ],
+            "min": 40
+          },
+          {
+            "kind": "gym",
+            "title": "Speed + jumps, lunch",
+            "note": "fresh, before anything tiring; skip in a deload or test week and within 48 h before a match",
+            "focus": "full",
+            "chips": [
+              "flying sprint 4 × 30 m, 20 m build-in, 3′ walk back",
+              "box jump 4×3 (higher box, step down)",
+              "hurdle hops 3×5"
+            ],
+            "min": 25,
+            "hard": true,
+            "optional": true,
+            "warmup": "jumps-sprints"
+          }
+        ],
+        "sat": [
+          {
+            "kind": "gym",
+            "title": "Power + Legs",
+            "focus": "legs",
+            "chips": [
+              "jump height by phone app, best of 3, hands on hips; to Hevy, reps = cm",
+              "standing broad jump, best of 3, by tape; to Hevy, reps = cm",
+              "power block 20′: sled push 3 × 20 m @ ~60% BW · 2 × 15 m accelerations · shuttles 2×1 (5-10-5) · lateral bounds 3×5/side, continuous",
+              "front rack hold 2 × 20–30 s, light, fingertip grip",
+              "front squat 4×3–5, fast up, 3 box jumps after each set; fingertip grip, elbows high; straps if wrists hurt",
+              "trap bar 3×5",
+              "loaded jump 3×3 (trap bar, light)",
+              "seated leg curl 2×8–10, 3–4 s lowering",
+              "core block, 2 rounds: Copenhagen side plank 20–30 s/side · Pallof press 10/side · ab wheel 8–10 · suitcase carry 40 m/side"
+            ],
+            "min": 70,
+            "hard": true
+          }
+        ]
+      }
+    },
+    {
+      "week": 11,
+      "start": "2026-12-07",
+      "end": "2026-12-13",
+      "block": "1 Athletic base",
+      "run_km": "15–25",
+      "key": "Sat 12 Dec: checkpoint (sprint/sled + broad jump)",
+      "note": "Deload with the checkpoint: sets −40% at the same loads, no Thursday speed.",
+      "flags": [
+        "test",
+        "deload"
+      ],
+      "template": "athletic-base",
+      "overrides": {
+        "wed": [
+          {
+            "kind": "gym",
+            "title": "Bonus",
+            "note": "no jumps or sprints: the day after floorball",
+            "focus": "upper",
+            "chips": [
+              "MB rotational wall throw 2×3/side",
+              "MB chest pass to the wall 2×5",
+              "DB bench 1×6–8, fast up",
+              "dips 2×6–10 (stop at upper arm parallel)",
+              "external rotation 1×15/side (cable or band)",
+              "SkiErg 6 × 15 s hard / 45 s easy, damper 8; best rep's peak to Hevy, reps = W"
+            ],
+            "min": 45,
+            "optional": true,
+            "first_to_go": true
+          },
+          {
+            "kind": "run",
+            "title": "Run home 5 km easy",
+            "chips": [
+              "HR ≤140"
+            ],
+            "min": 30,
+            "optional": true,
+            "first_to_go": true
+          }
+        ],
+        "thu": [
+          {
+            "kind": "run",
+            "title": "Run commute, easy 5–8 km",
+            "chips": [
+              "the mileage floor"
+            ],
+            "min": 40
+          }
+        ],
+        "sat": [
+          {
+            "kind": "test",
+            "title": "Checkpoint + Legs",
+            "chips": [
+              "15 m sprint or sled time: best of 3 (the tests take ~20 min)",
+              "standing broad jump: best of 3, by tape",
+              "jump height by phone app: best of 3",
+              "front rack hold 1 × 20–30 s, light, fingertip grip",
+              "front squat 2×3–5, fast up; fingertip grip, elbows high; straps if wrists hurt",
+              "trap bar 2×5",
+              "seated leg curl 1×8–10, 3–4 s lowering",
+              "core block, 1 round: Copenhagen side plank 20–30 s/side · Pallof press 10/side · ab wheel 8–10 · suitcase carry 40 m/side"
+            ],
+            "min": 70,
+            "hard": true,
+            "warmup": "jumps-sprints"
+          }
+        ],
+        "sun": [
+          {
+            "kind": "gym",
+            "title": "Upper",
+            "focus": "upper",
+            "chips": [
+              "MB overhead throw or slam 2×3, first",
+              "strict OHP 2×3–5, right after the throws",
+              "weighted pull-ups 2×5–6",
+              "chest-supported DB row 2×10",
+              "single-leg RDL 2×8/side, one dumbbell",
+              "face pull 2×12–15",
+              "wrist curl + reverse wrist curl 1×15, light",
+              "hanging leg raises 1×8–12"
+            ],
+            "min": 65,
+            "hard": true
+          }
+        ]
+      }
+    },
+    {
+      "week": 12,
+      "start": "2026-12-14",
+      "end": "2026-12-20",
+      "block": "1 Athletic base",
+      "run_km": "15–25",
+      "key": "",
+      "note": "Sharpen: fewer sets, best quality, then the holiday deload.",
+      "flags": [],
+      "template": "athletic-base",
+      "overrides": {
+        "wed": [
+          {
+            "kind": "gym",
+            "title": "Bonus",
+            "note": "no jumps or sprints: the day after floorball",
+            "focus": "upper",
+            "chips": [
+              "MB rotational wall throw 3×3/side",
+              "MB chest pass to the wall 3×5",
+              "DB bench 2×6–8, fast up",
+              "dips 3×6–10 (stop at upper arm parallel)",
+              "external rotation 2×15/side (cable or band)",
+              "SkiErg 8 × 15 s hard / 45 s easy, damper 8; best rep's peak to Hevy, reps = W"
+            ],
+            "min": 45,
+            "optional": true,
+            "first_to_go": true
+          },
+          {
+            "kind": "run",
+            "title": "Run home 5 km easy",
+            "chips": [
+              "HR ≤140"
+            ],
+            "min": 30,
+            "optional": true,
+            "first_to_go": true
+          }
+        ],
+        "thu": [
+          {
+            "kind": "run",
+            "title": "Run commute, easy 5–8 km",
+            "chips": [
+              "the mileage floor"
+            ],
+            "min": 40
+          },
+          {
+            "kind": "gym",
+            "title": "Speed + jumps, lunch",
+            "note": "fresh, before anything tiring; skip in a deload or test week and within 48 h before a match",
+            "focus": "full",
+            "chips": [
+              "flying sprint 4 × 30 m, 20 m build-in, 3′ walk back",
+              "box jump 3×3 (step down)",
+              "hurdle hops 2×5"
+            ],
+            "min": 25,
+            "hard": true,
+            "optional": true,
+            "warmup": "jumps-sprints"
+          }
+        ],
+        "sat": [
+          {
+            "kind": "gym",
+            "title": "Power + Legs",
+            "focus": "legs",
+            "chips": [
+              "jump height by phone app, best of 3, hands on hips; to Hevy, reps = cm",
+              "standing broad jump, best of 3, by tape; to Hevy, reps = cm",
+              "power block 20′: sled push 3 × 15 m @ ~60% BW · 2 × 15 m accelerations · shuttles 3×1 (5-10-5) · lateral bounds 3×5/side, continuous",
+              "front rack hold 2 × 20–30 s, light, fingertip grip",
+              "front squat 4×3–5, fast up, 3 box jumps after each set; fingertip grip, elbows high; straps if wrists hurt",
+              "trap bar 3×5",
+              "loaded jump 3×3 (trap bar, light)",
+              "seated leg curl 2×8–10, 3–4 s lowering",
+              "core block, 2 rounds: Copenhagen side plank 20–30 s/side · Pallof press 10/side · ab wheel 8–10 · suitcase carry 40 m/side"
+            ],
+            "min": 70,
+            "hard": true
+          }
+        ]
+      }
+    },
+    {
+      "week": 13,
+      "start": "2026-12-21",
+      "end": "2026-12-27",
+      "block": "Holiday deload",
+      "run_km": "10–15",
+      "key": "",
+      "note": "Optional XC skiing on the holiday trip.",
+      "flags": [
+        "deload",
+        "travel"
+      ],
+      "template": "holiday-deload",
+      "overrides": {
+        "wed": [
+          {
+            "kind": "ski",
+            "title": "XC skiing, holiday trip",
+            "chips": [
+              "easy"
+            ],
+            "min": 60,
+            "optional": true
+          }
+        ]
+      }
+    },
+    {
+      "week": 14,
+      "start": "2026-12-28",
+      "end": "2027-01-03",
+      "block": "Holiday deload",
+      "run_km": "10–15",
+      "key": "",
+      "note": "",
+      "flags": [
+        "deload"
+      ],
+      "template": "holiday-deload"
+    },
+    {
+      "week": 15,
+      "start": "2027-01-04",
+      "end": "2027-01-10",
+      "block": "2 Floorball peak",
+      "run_km": "15–25",
+      "key": "Sat 9 Jan: League games 14:00 + 17:00",
+      "note": "",
+      "flags": [],
+      "template": "in-season-b2",
+      "overrides": {
+        "sat": [
+          {
+            "kind": "floorball",
+            "title": "League games 14:00 + 17:00",
+            "note": "two league games; no gym today",
+            "min": 120,
+            "hard": true
+          }
+        ]
+      }
+    },
+    {
+      "week": 16,
+      "start": "2027-01-11",
+      "end": "2027-01-17",
+      "block": "2 Floorball peak",
+      "run_km": "15–25",
+      "key": "",
+      "note": "",
+      "flags": [],
+      "template": "in-season-b2"
+    },
+    {
+      "week": 17,
+      "start": "2027-01-18",
+      "end": "2027-01-24",
+      "block": "2 Floorball peak",
+      "run_km": "15–25",
+      "key": "Sat 23 Jan: League games 11:00 + 13:00",
+      "note": "",
+      "flags": [],
+      "template": "in-season-b2",
+      "overrides": {
+        "sat": [
+          {
+            "kind": "floorball",
+            "title": "League games 11:00 + 13:00",
+            "note": "two league games; no gym today",
+            "min": 120,
+            "hard": true
+          }
+        ]
+      }
+    },
+    {
+      "week": 18,
+      "start": "2027-01-25",
+      "end": "2027-01-31",
+      "block": "2 Floorball peak",
+      "run_km": "15–25",
+      "key": "",
+      "note": "",
+      "flags": [],
+      "template": "in-season-b2"
+    },
+    {
+      "week": 19,
+      "start": "2027-02-01",
+      "end": "2027-02-07",
+      "block": "2 Floorball peak",
+      "run_km": "15–25",
+      "key": "",
+      "note": "",
+      "flags": [],
+      "template": "in-season-b2"
+    },
+    {
+      "week": 20,
+      "start": "2027-02-08",
+      "end": "2027-02-14",
+      "block": "2 Floorball peak",
+      "run_km": "15–25",
+      "key": "Sun 14 Feb: League games 16:00 + 19:00",
+      "note": "",
+      "flags": [],
+      "template": "in-season-b2",
+      "overrides": {
+        "sun": [
+          {
+            "kind": "floorball",
+            "title": "League games 16:00 + 19:00",
+            "note": "two league games; no gym today",
+            "min": 120,
+            "hard": true
+          }
+        ]
+      }
+    },
+    {
+      "week": 21,
+      "start": "2027-02-15",
+      "end": "2027-02-21",
+      "block": "2 Floorball peak",
+      "run_km": "15–25",
+      "key": "",
+      "note": "",
+      "flags": [],
+      "template": "in-season-b2"
+    },
+    {
+      "week": 22,
+      "start": "2027-02-22",
+      "end": "2027-02-28",
+      "block": "2 Floorball peak",
+      "run_km": "15–25",
+      "key": "Sat 27 Feb: League games 12:00 + 14:00",
+      "note": "",
+      "flags": [],
+      "template": "in-season-b2",
+      "overrides": {
+        "sat": [
+          {
+            "kind": "floorball",
+            "title": "League games 12:00 + 14:00",
+            "note": "two league games; no gym today",
+            "min": 120,
+            "hard": true
+          }
+        ]
+      }
+    },
+    {
+      "week": 23,
+      "start": "2027-03-01",
+      "end": "2027-03-07",
+      "block": "2 Floorball peak",
+      "run_km": "15–25",
+      "key": "Sat 6 Mar: Ski race 25 km (optional)",
+      "note": "",
+      "flags": [
+        "event-optional"
+      ],
+      "template": "in-season-b2",
+      "overrides": {
+        "sat": [
+          {
+            "kind": "event",
+            "title": "Ski race 25 km",
+            "chips": [
+              "classic, skin skis",
+              "60–90 g carbs/h",
+              "not racing: Legs without the power block"
+            ],
+            "hard": true,
+            "optional": true
+          }
+        ]
+      }
+    },
+    {
+      "week": 24,
+      "start": "2027-03-08",
+      "end": "2027-03-14",
+      "block": "2 Floorball peak",
+      "run_km": "15–25",
+      "key": "Sun 14 Mar: League games 11:00 + 14:00",
+      "note": "",
+      "flags": [],
+      "template": "in-season-b2",
+      "overrides": {
+        "sun": [
+          {
+            "kind": "floorball",
+            "title": "League games 11:00 + 14:00",
+            "note": "two league games; no gym today",
+            "min": 120,
+            "hard": true
+          }
+        ]
+      }
+    },
+    {
+      "week": 25,
+      "start": "2027-03-15",
+      "end": "2027-03-21",
+      "block": "2 Floorball peak",
+      "run_km": "15–25",
+      "key": "",
+      "note": "",
+      "flags": [],
+      "template": "in-season-b2"
+    },
+    {
+      "week": 26,
+      "start": "2027-03-22",
+      "end": "2027-03-28",
+      "block": "2 Floorball peak",
+      "run_km": "15–25",
+      "key": "",
+      "note": "",
+      "flags": [],
+      "template": "in-season-b2"
+    },
+    {
+      "week": 27,
+      "start": "2027-03-29",
+      "end": "2027-04-04",
+      "block": "Transition",
+      "run_km": "15–20",
+      "key": "",
+      "note": "Easy week (not in v3.1).",
+      "flags": [
+        "deload"
+      ],
+      "template": "transition"
+    },
+    {
+      "week": 28,
+      "start": "2027-04-05",
+      "end": "2027-04-11",
+      "block": "3 Goal focus · wk 1",
+      "run_km": "25–35",
+      "key": "",
+      "note": "",
+      "flags": [],
+      "template": "b3-early"
+    },
+    {
+      "week": 29,
+      "start": "2027-04-12",
+      "end": "2027-04-18",
+      "block": "3 Goal focus · wk 2",
+      "run_km": "25–35",
+      "key": "",
+      "note": "",
+      "flags": [],
+      "template": "b3-early"
+    },
+    {
+      "week": 30,
+      "start": "2027-04-19",
+      "end": "2027-04-25",
+      "block": "3 Goal focus · wk 3",
+      "run_km": "25–35",
+      "key": "",
+      "note": "",
+      "flags": [],
+      "template": "b3-early"
+    },
+    {
+      "week": 31,
+      "start": "2027-04-26",
+      "end": "2027-05-02",
+      "block": "3 Goal focus · wk 4",
+      "run_km": "25–35",
+      "key": "",
+      "note": "",
+      "flags": [],
+      "template": "b3-early"
+    },
+    {
+      "week": 32,
+      "start": "2027-05-03",
+      "end": "2027-05-09",
+      "block": "3 Goal focus · wk 5",
+      "run_km": "25–35",
+      "key": "",
+      "note": "",
+      "flags": [],
+      "template": "b3-early",
+      "overrides": {
+        "thu": [
+          {
+            "kind": "run",
+            "title": "Run-station-run 3 × (1 km @ race pace → station → 1 km)",
+            "chips": [
+              "station block rotation"
+            ],
+            "min": 60,
+            "hard": true
+          }
+        ]
+      }
+    },
+    {
+      "week": 33,
+      "start": "2027-05-10",
+      "end": "2027-05-16",
+      "block": "3 Goal focus · wk 6",
+      "run_km": "25–35",
+      "key": "",
+      "note": "",
+      "flags": [],
+      "template": "b3-early",
+      "overrides": {
+        "thu": [
+          {
+            "kind": "run",
+            "title": "Run-station-run 3 × (1 km @ race pace → station → 1 km)",
+            "chips": [
+              "station block rotation"
+            ],
+            "min": 60,
+            "hard": true
+          }
+        ]
+      }
+    },
+    {
+      "week": 34,
+      "start": "2027-05-17",
+      "end": "2027-05-23",
+      "block": "3 Goal focus · wk 7",
+      "run_km": "25–35",
+      "key": "Hybrid race (Sat 22 May)",
+      "note": "",
+      "flags": [
+        "event"
+      ],
+      "template": "b3-early",
+      "overrides": {
+        "thu": [
+          {
+            "kind": "run",
+            "title": "Run-station-run 3 × (1 km @ race pace → station → 1 km)",
+            "chips": [
+              "station block rotation"
+            ],
+            "min": 60,
+            "hard": true
+          }
+        ],
+        "sat": [
+          {
+            "kind": "event",
+            "title": "Hybrid race",
+            "chips": [
+              "Open singles",
+              "breakfast 3 h before, caffeine ~3 mg/kg"
+            ],
+            "hard": true
+          }
+        ]
+      }
+    },
+    {
+      "week": 35,
+      "start": "2027-05-24",
+      "end": "2027-05-30",
+      "block": "3 Goal focus · wk 8",
+      "run_km": "25–35",
+      "key": "",
+      "note": "Recovery week after the race.",
+      "flags": [],
+      "template": "b3-early",
+      "overrides": {
+        "thu": [
+          {
+            "kind": "run",
+            "title": "Run-station-run 3 × (1 km @ race pace → station → 1 km)",
+            "chips": [
+              "station block rotation"
+            ],
+            "min": 60,
+            "hard": true
+          }
+        ]
+      }
+    },
+    {
+      "week": 36,
+      "start": "2027-05-31",
+      "end": "2027-06-06",
+      "block": "3 Goal focus · wk 9",
+      "run_km": "25–35",
+      "key": "",
+      "note": "",
+      "flags": [],
+      "template": "b3-early",
+      "overrides": {
+        "thu": [
+          {
+            "kind": "run",
+            "title": "Run-station-run 3 × (1 km @ race pace → station → 1 km)",
+            "chips": [
+              "station block rotation"
+            ],
+            "min": 60,
+            "hard": true
+          }
+        ]
+      }
+    },
+    {
+      "week": 37,
+      "start": "2027-06-07",
+      "end": "2027-06-13",
+      "block": "3 Goal focus · wk 10 (strength turn)",
+      "run_km": "25–35",
+      "key": "",
+      "note": "",
+      "flags": [],
+      "template": "b3-strength"
+    },
+    {
+      "week": 38,
+      "start": "2027-06-14",
+      "end": "2027-06-20",
+      "block": "3 Goal focus · wk 11 (strength turn)",
+      "run_km": "25–35",
+      "key": "",
+      "note": "",
+      "flags": [],
+      "template": "b3-strength"
+    },
+    {
+      "week": 39,
+      "start": "2027-06-21",
+      "end": "2027-06-27",
+      "block": "3 Goal focus · wk 12 (strength turn)",
+      "run_km": "25–35",
+      "key": "Thu 24 Jun: Cooper #2 (gate)",
+      "note": "",
+      "flags": [
+        "test"
+      ],
+      "template": "b3-strength",
+      "overrides": {
+        "thu": [
+          {
+            "kind": "test",
+            "title": "Cooper #2",
+            "chips": [
+              "the gate: ≥3,150 m → 3,200 m is live, <3,100 m → 3,100 m",
+              "89–90 s per lap, lap 1 no faster than 87 s"
+            ],
+            "min": 45,
+            "hard": true
+          }
+        ]
+      }
+    },
+    {
+      "week": 40,
+      "start": "2027-06-28",
+      "end": "2027-07-04",
+      "block": "Summer running block",
+      "run_km": "35",
+      "key": "Tue 5×1 km @ ~4:22 · Thu 3×8′ T · Sat 60′",
+      "note": "",
+      "flags": [],
+      "template": "summer",
+      "overrides": {
+        "tue": [
+          {
+            "kind": "run",
+            "title": "5 × 1 km @ ~4:22",
+            "chips": [
+              "2′ jog",
+              "no pack"
+            ],
+            "min": 50,
+            "hard": true
+          }
+        ],
+        "thu": [
+          {
+            "kind": "run",
+            "title": "3 × 8′ threshold",
+            "chips": [
+              "48 h after Tuesday"
+            ],
+            "min": 50,
+            "hard": true
+          }
+        ],
+        "sat": [
+          {
+            "kind": "run",
+            "title": "Long run 60′ easy",
+            "chips": [
+              "HR ≤140"
+            ],
+            "min": 60
+          }
+        ]
+      }
+    },
+    {
+      "week": 41,
+      "start": "2027-07-05",
+      "end": "2027-07-11",
+      "block": "Summer running block",
+      "run_km": "40",
+      "key": "Tue 6×800 m @ ~4:15 · Thu 2×12′ T · Sat 65′",
+      "note": "",
+      "flags": [],
+      "template": "summer",
+      "overrides": {
+        "tue": [
+          {
+            "kind": "run",
+            "title": "6 × 800 m @ ~4:15/km",
+            "chips": [
+              "2′ jog",
+              "no pack"
+            ],
+            "min": 50,
+            "hard": true
+          }
+        ],
+        "thu": [
+          {
+            "kind": "run",
+            "title": "2 × 12′ threshold",
+            "chips": [
+              "48 h after Tuesday"
+            ],
+            "min": 50,
+            "hard": true
+          }
+        ],
+        "sat": [
+          {
+            "kind": "run",
+            "title": "Long run 65′ easy",
+            "chips": [
+              "HR ≤140"
+            ],
+            "min": 65
+          }
+        ]
+      }
+    },
+    {
+      "week": 42,
+      "start": "2027-07-12",
+      "end": "2027-07-18",
+      "block": "Summer running block",
+      "run_km": "40–45",
+      "key": "Tue 4×4′ @ I · Thu Event brick (3 km + 10′ SkiErg) · Sat 70′",
+      "note": "",
+      "flags": [],
+      "template": "summer",
+      "overrides": {
+        "tue": [
+          {
+            "kind": "run",
+            "title": "4 × 4′ @ I",
+            "chips": [
+              "3′ jog",
+              "no pack"
+            ],
+            "min": 50,
+            "hard": true
+          }
+        ],
+        "thu": [
+          {
+            "kind": "run",
+            "title": "Event brick: 3 km run + 10′ SkiErg",
+            "min": 45,
+            "hard": true
+          }
+        ],
+        "sat": [
+          {
+            "kind": "run",
+            "title": "Long run 70′ easy",
+            "chips": [
+              "HR ≤140"
+            ],
+            "min": 70
+          }
+        ]
+      }
+    },
+    {
+      "week": 43,
+      "start": "2027-07-19",
+      "end": "2027-07-25",
+      "block": "Summer running block",
+      "run_km": "30–35",
+      "key": "Tue 5×1 km @ ~4:18 · Thu tempo 20′ · Sat 50′ · gym: RPE-8 triples",
+      "note": "",
+      "flags": [],
+      "template": "summer",
+      "overrides": {
+        "tue": [
+          {
+            "kind": "run",
+            "title": "5 × 1 km @ ~4:18",
+            "chips": [
+              "no pack"
+            ],
+            "min": 50,
+            "hard": true
+          }
+        ],
+        "wed": [
+          {
+            "kind": "gym",
+            "title": "Maintenance + RPE-8 triples",
+            "focus": "full",
+            "chips": [
+              "back squat, deadlift, push press: work up to an RPE-8 triple"
+            ],
+            "min": 40
+          }
+        ],
+        "thu": [
+          {
+            "kind": "run",
+            "title": "Tempo 20′",
+            "chips": [
+              "HR 160–168"
+            ],
+            "min": 40,
+            "hard": true
+          }
+        ],
+        "sat": [
+          {
+            "kind": "run",
+            "title": "Long run 50′ easy",
+            "chips": [
+              "HR ≤140"
+            ],
+            "min": 50
+          }
+        ]
+      }
+    },
+    {
+      "week": 44,
+      "start": "2027-07-26",
+      "end": "2027-08-01",
+      "block": "4 Peak · wk 1",
+      "run_km": "40–45",
+      "key": "Tue: 3×4′ @ 89–90 s/400",
+      "note": "",
+      "flags": [],
+      "template": "b4-b",
+      "overrides": {
+        "tue": [
+          {
+            "kind": "run",
+            "title": "Track: 3 × 4′ @ 89–90 s/400",
+            "chips": [
+              "2′ jog",
+              "no pack"
+            ],
+            "min": 50,
+            "hard": true
+          }
+        ]
+      }
+    },
+    {
+      "week": 45,
+      "start": "2027-08-02",
+      "end": "2027-08-08",
+      "block": "4 Peak · wk 2",
+      "run_km": "35–40",
+      "key": "Tue: 5×1 km @ ~4:20",
+      "note": "",
+      "flags": [],
+      "template": "b4-a",
+      "overrides": {
+        "tue": [
+          {
+            "kind": "run",
+            "title": "Track: 5 × 1 km @ ~4:20",
+            "chips": [
+              "2′ jog",
+              "no pack"
+            ],
+            "min": 50,
+            "hard": true
+          }
+        ]
+      }
+    },
+    {
+      "week": 46,
+      "start": "2027-08-09",
+      "end": "2027-08-15",
+      "block": "4 Peak · wk 3",
+      "run_km": "15–20",
+      "key": "Sat–Sun 14–15 Aug: Fitness event (low priority)",
+      "note": "Light Mon–Wed, no legs from Thu, no track session.",
+      "flags": [
+        "event"
+      ],
+      "template": "event-week"
+    },
+    {
+      "week": 47,
+      "start": "2027-08-16",
+      "end": "2027-08-22",
+      "block": "4 Peak · wk 4",
+      "run_km": "25",
+      "key": "Tue: 6×400 m @ 89 s",
+      "note": "Deload: Thu easy.",
+      "flags": [
+        "deload"
+      ],
+      "template": "b4-a",
+      "overrides": {
+        "tue": [
+          {
+            "kind": "run",
+            "title": "Track: 6 × 400 m @ 89 s",
+            "chips": [
+              "no pack"
+            ],
+            "min": 50,
+            "hard": true
+          }
+        ],
+        "thu": [
+          {
+            "kind": "run",
+            "title": "Easy run",
+            "chips": [
+              "deload",
+              "HR ≤140"
+            ],
+            "min": 40
+          }
+        ]
+      }
+    },
+    {
+      "week": 48,
+      "start": "2027-08-23",
+      "end": "2027-08-29",
+      "block": "4 Peak · wk 5",
+      "run_km": "40–45",
+      "key": "Tue: 2×6′ @ 90 s/400",
+      "note": "",
+      "flags": [],
+      "template": "b4-b",
+      "overrides": {
+        "tue": [
+          {
+            "kind": "run",
+            "title": "Track: 2 × 6′ @ 90 s/400",
+            "chips": [
+              "3′ jog",
+              "no pack"
+            ],
+            "min": 50,
+            "hard": true
+          }
+        ]
+      }
+    },
+    {
+      "week": 49,
+      "start": "2027-08-30",
+      "end": "2027-09-05",
+      "block": "4 Peak · wk 6",
+      "run_km": "40",
+      "key": "Tue: 8′ @ 91 s/400 + 4′ all-out",
+      "note": "",
+      "flags": [],
+      "template": "b4-a",
+      "overrides": {
+        "tue": [
+          {
+            "kind": "run",
+            "title": "Track: 8′ @ 91 s/400 + 4′ all-out",
+            "chips": [
+              "test simulation",
+              "no pack"
+            ],
+            "min": 50,
+            "hard": true
+          }
+        ]
+      }
+    },
+    {
+      "week": 50,
+      "start": "2027-09-06",
+      "end": "2027-09-12",
+      "block": "4 Peak · wk 7",
+      "run_km": "25",
+      "key": "Tue: 2×4′ @ 90 s/400",
+      "note": "Taper: Thu tempo 12′.",
+      "flags": [
+        "taper"
+      ],
+      "template": "b4-b",
+      "overrides": {
+        "tue": [
+          {
+            "kind": "run",
+            "title": "Track: 2 × 4′ @ 90 s/400",
+            "chips": [
+              "no pack"
+            ],
+            "min": 50,
+            "hard": true
+          }
+        ],
+        "thu": [
+          {
+            "kind": "run",
+            "title": "Tempo 12′",
+            "chips": [
+              "taper"
+            ],
+            "min": 35,
+            "hard": true
+          }
+        ]
+      }
+    },
+    {
+      "week": 51,
+      "start": "2027-09-13",
+      "end": "2027-09-19",
+      "block": "Test week",
+      "run_km": "10–15",
+      "key": "Wed 15 Sep: lifts · Sat 18 Sep: COOPER",
+      "note": "Tue 4×200 m relaxed-fast. No lower-body lifting after Wed.",
+      "flags": [
+        "test"
+      ],
+      "template": "test-week"
+    }
+  ],
+  "open_items": [
+    "Race-day fuelling for the hybrid race",
+    "Deload alignment of four-week waves",
+    "Event overhead standard",
+    "A second checkpoint in March"
+  ],
+  "templates": {
+    "re-entry": {
+      "mon": [
+        {
+          "kind": "run",
+          "title": "Run commute, easy 5–8 km",
+          "chips": [
+            "calf raises + pogos 2×20",
+            "4–6 × 20 s strides"
+          ],
+          "min": 40
+        }
+      ],
+      "tue": [
+        {
+          "kind": "floorball",
+          "title": "Floorball",
+          "min": 60,
+          "hard": true
+        }
+      ],
+      "wed": [
+        {
+          "kind": "gym",
+          "title": "Bonus @ RPE 6",
+          "focus": "upper",
+          "chips": [
+            "MB throws 3×3",
+            "DB bench 3×8–10",
+            "laterals 3×12–15",
+            "triceps",
+            "cuff"
+          ],
+          "min": 50,
+          "optional": true,
+          "first_to_go": true
+        },
+        {
+          "kind": "run",
+          "title": "Run home 5 km easy",
+          "chips": [
+            "HR ≤140"
+          ],
+          "min": 30,
+          "optional": true,
+          "first_to_go": true
+        }
+      ],
+      "thu": [
+        {
+          "kind": "run",
+          "title": "Run commute, extra-easy 5–8 km",
+          "chips": [
+            "HR ≤140"
+          ],
+          "min": 40
+        }
+      ],
+      "fri": [
+        {
+          "kind": "run",
+          "title": "Run in 5 km easy",
+          "chips": [
+            "15 min mobility"
+          ],
+          "min": 40,
+          "optional": true,
+          "first_to_go": true
+        }
+      ],
+      "sat": [
+        {
+          "kind": "gym",
+          "title": "Legs @ RPE 6, no power block",
+          "focus": "legs",
+          "chips": [
+            "Nordics 3×4–6",
+            "Copenhagen 3×8",
+            "front squat 4×6–8",
+            "trap bar 3×5",
+            "farmer carry 2×40 m"
+          ],
+          "min": 60
+        }
+      ],
+      "sun": [
+        {
+          "kind": "gym",
+          "title": "Upper @ RPE 6",
+          "focus": "upper",
+          "chips": [
+            "strict OHP 4×6–8 first",
+            "weighted pull-ups 4×5–6",
+            "chest-supported row 3×10",
+            "single-leg RDL 3×8",
+            "rear delts + curls",
+            "dead hangs 2 sets"
+          ],
+          "min": 65
+        }
+      ]
+    },
+    "in-season-b1": {
+      "mon": [
+        {
+          "kind": "run",
+          "title": "Run commute, easy 5–8 km",
+          "chips": [
+            "calf raises + pogos 2×20",
+            "4–6 × 20 s strides"
+          ],
+          "min": 40
+        }
+      ],
+      "tue": [
+        {
+          "kind": "floorball",
+          "title": "Floorball",
+          "min": 60,
+          "hard": true
+        }
+      ],
+      "wed": [
+        {
+          "kind": "gym",
+          "title": "Bonus",
+          "focus": "upper",
+          "chips": [
+            "MB rotational wall throw 3×3/side",
+            "DB bench 3×8–10",
+            "DB lateral raise 3×12–15",
+            "rope pushdown 3×12–15",
+            "external rotation 2×15/side (cable or band)",
+            "wrist curl + reverse wrist curl 2×15, light",
+            "SkiErg 8 × 30 s / 30 s (Nov–Feb: alternate weeks 3 × 5′ steady double poling)"
+          ],
+          "min": 50,
+          "optional": true,
+          "first_to_go": true
+        },
+        {
+          "kind": "run",
+          "title": "Run home 5 km easy",
+          "chips": [
+            "HR ≤140"
+          ],
+          "min": 30,
+          "optional": true,
+          "first_to_go": true
+        }
+      ],
+      "thu": [
+        {
+          "kind": "run",
+          "title": "Run commute, easy 5–8 km",
+          "chips": [
+            "the mileage floor"
+          ],
+          "min": 40
+        },
+        {
+          "kind": "ski",
+          "title": "SkiErg 4 × 4′, lunch",
+          "chips": [
+            "10′ warm-up · 4 × 4′ at 167–176 bpm (90–95% of max), 3′ easy between · 5′ cool-down",
+            "engine only: on top, if time and recovery allow",
+            "skip in a deload or test week, and within 48 h before a match"
+          ],
+          "min": 40,
+          "hard": true,
+          "optional": true
+        }
+      ],
+      "fri": [
+        {
+          "kind": "run",
+          "title": "Run in 5 km easy",
+          "chips": [
+            "15 min mobility, wrist and lat-triceps stretches included"
+          ],
+          "min": 40,
+          "optional": true,
+          "first_to_go": true
+        }
+      ],
+      "sat": [
+        {
+          "kind": "gym",
+          "title": "Power + Legs",
+          "focus": "legs",
+          "chips": [
+            "power block 15′: sled push 3 × 15 m @ ~50% BW · 4 × 15 m accelerations · lateral bounds 3×4/side (from Dec: 2 accelerations become 5-10-5 shuttles)",
+            "front rack hold 2 × 20–30 s, light, fingertip grip",
+            "front squat 4×6–8, fingertip grip, elbows high; straps if wrists hurt",
+            "trap bar 3×5",
+            "seated leg curl 2×8–10",
+            "core block, 2 rounds: Copenhagen side plank 20–30 s/side · Pallof press 10/side · ab wheel 8–10 · suitcase carry 40 m/side"
+          ],
+          "min": 70,
+          "hard": true
+        }
+      ],
+      "sun": [
+        {
+          "kind": "gym",
+          "title": "Upper",
+          "focus": "upper",
+          "chips": [
+            "strict OHP 4×6–8 first",
+            "weighted pull-ups 4×5–6",
+            "body-weight pull-ups 2 sets, 2 reps short of failure",
+            "chest-supported DB row 3×10",
+            "single-leg RDL 3×8/side, one dumbbell",
+            "face pull 3×12–15",
+            "DB curl 2×10–12",
+            "wrist curl + reverse wrist curl 2×15, light",
+            "hanging leg raises 2×8–12"
+          ],
+          "min": 65,
+          "hard": true
+        }
+      ]
+    },
+    "athletic-base": {
+      "mon": [
+        {
+          "kind": "run",
+          "title": "Run commute, easy 5–8 km",
+          "chips": [
+            "calf raises + pogos 2×20",
+            "4–6 × 20 s strides"
+          ],
+          "min": 40
+        }
+      ],
+      "tue": [
+        {
+          "kind": "floorball",
+          "title": "Floorball",
+          "min": 60,
+          "hard": true
+        }
+      ],
+      "wed": [
+        {
+          "kind": "gym",
+          "title": "Bonus",
+          "note": "no jumps or sprints: the day after floorball",
+          "focus": "upper",
+          "chips": [
+            "MB rotational wall throw 3×3/side",
+            "MB chest pass to the wall 3×5",
+            "DB bench 2×6–8, fast up",
+            "dips 3×6–10 (stop at upper arm parallel)",
+            "external rotation 2×15/side (cable or band)",
+            "SkiErg 8 × 15 s hard / 45 s easy, damper 8; best rep's peak to Hevy, reps = W"
+          ],
+          "min": 45,
+          "optional": true,
+          "first_to_go": true
+        },
+        {
+          "kind": "run",
+          "title": "Run home 5 km easy",
+          "chips": [
+            "HR ≤140"
+          ],
+          "min": 30,
+          "optional": true,
+          "first_to_go": true
+        }
+      ],
+      "thu": [
+        {
+          "kind": "run",
+          "title": "Run commute, easy 5–8 km",
+          "chips": [
+            "the mileage floor"
+          ],
+          "min": 40
+        },
+        {
+          "kind": "gym",
+          "title": "Speed + jumps, lunch",
+          "note": "fresh, before anything tiring; skip in a deload or test week and within 48 h before a match",
+          "focus": "full",
+          "chips": [
+            "flying sprint 4–6 × 20 m, 20 m build-in, 2–3′ walk back",
+            "box jump 3–4×3 (step down)",
+            "hurdle hops 2–3×5"
+          ],
+          "min": 25,
+          "hard": true,
+          "optional": true,
+          "warmup": "jumps-sprints"
+        }
+      ],
+      "fri": [
+        {
+          "kind": "run",
+          "title": "Run in 5 km easy",
+          "chips": [
+            "15 min mobility, wrist and lat-triceps stretches included"
+          ],
+          "min": 40,
+          "optional": true,
+          "first_to_go": true
+        }
+      ],
+      "sat": [
+        {
+          "kind": "gym",
+          "title": "Power + Legs",
+          "focus": "legs",
+          "chips": [
+            "jump height by phone app, best of 3, hands on hips; to Hevy, reps = cm",
+            "standing broad jump, best of 3, by tape; to Hevy, reps = cm",
+            "power block 20′: sled push 3 × 15 m @ ~50–60% BW · 4–5 × 15 m accelerations · lateral bounds 3×4–5/side · drop to stick landing 2×3 (from Dec: 2 accelerations become shuttles 2×1, 5-10-5)",
+            "front rack hold 2 × 20–30 s, light, fingertip grip",
+            "front squat 4×3–5, fast up, 3 box jumps after each set; fingertip grip, elbows high; straps if wrists hurt",
+            "trap bar 3×5",
+            "loaded jump 3×3 (trap bar, light)",
+            "seated leg curl 2×8–10, 3–4 s lowering",
+            "core block, 2 rounds: Copenhagen side plank 20–30 s/side · Pallof press 10/side · ab wheel 8–10 · suitcase carry 40 m/side"
+          ],
+          "min": 70,
+          "hard": true
+        }
+      ],
+      "sun": [
+        {
+          "kind": "gym",
+          "title": "Upper",
+          "focus": "upper",
+          "chips": [
+            "MB overhead throw or slam 3×3, first",
+            "strict OHP 4×3–5, right after the throws",
+            "weighted pull-ups 4×5–6",
+            "body-weight pull-ups 2 sets, 2 reps short of failure",
+            "chest-supported DB row 3×10",
+            "single-leg RDL 3×8/side, one dumbbell",
+            "face pull 3×12–15",
+            "wrist curl + reverse wrist curl 2×15, light, through Sun Nov 22, then off if the front squat feels fine",
+            "hanging leg raises 2×8–12"
+          ],
+          "min": 65,
+          "hard": true
+        }
+      ]
+    },
+    "in-season-b2": {
+      "mon": [
+        {
+          "kind": "run",
+          "title": "Run commute, easy 5–8 km",
+          "chips": [
+            "calf raises + pogos 2×20",
+            "4–6 × 20 s strides"
+          ],
+          "min": 40
+        }
+      ],
+      "tue": [
+        {
+          "kind": "floorball",
+          "title": "Floorball",
+          "min": 60,
+          "hard": true
+        }
+      ],
+      "wed": [
+        {
+          "kind": "gym",
+          "title": "Bonus",
+          "focus": "upper",
+          "chips": [
+            "MB rotational wall throw 3×3/side",
+            "DB bench 3×8–10",
+            "DB lateral raise 3×12–15",
+            "rope pushdown 3×12–15",
+            "external rotation 2×15/side (cable or band)",
+            "wrist curl + reverse wrist curl 2×15, light",
+            "SkiErg 8 × 30 s / 30 s (Nov–Feb: alternate weeks 3 × 5′ steady double poling)"
+          ],
+          "min": 50,
+          "optional": true,
+          "first_to_go": true
+        },
+        {
+          "kind": "run",
+          "title": "Run home 5 km easy",
+          "chips": [
+            "HR ≤140"
+          ],
+          "min": 30,
+          "optional": true,
+          "first_to_go": true
+        }
+      ],
+      "thu": [
+        {
+          "kind": "run",
+          "title": "Run commute, easy 5–8 km",
+          "chips": [
+            "the mileage floor"
+          ],
+          "min": 40
+        },
+        {
+          "kind": "ski",
+          "title": "SkiErg 4 × 4′, lunch",
+          "chips": [
+            "10′ warm-up · 4 × 4′ at 167–176 bpm (90–95% of max), 3′ easy between · 5′ cool-down",
+            "engine only: on top, if time and recovery allow",
+            "skip in a deload or test week, and within 48 h before a match"
+          ],
+          "min": 40,
+          "hard": true,
+          "optional": true
+        }
+      ],
+      "fri": [
+        {
+          "kind": "run",
+          "title": "Run in 5 km easy",
+          "chips": [
+            "15 min mobility, wrist and lat-triceps stretches included"
+          ],
+          "min": 40,
+          "optional": true,
+          "first_to_go": true
+        }
+      ],
+      "sat": [
+        {
+          "kind": "gym",
+          "title": "Power + Legs",
+          "note": "match week: sled and shuttles out",
+          "focus": "legs",
+          "chips": [
+            "power block 15′: sled push 3 × 15 m @ ~50% BW · 4 × 15 m accelerations · lateral bounds 3×4/side (from Dec: 2 accelerations become 5-10-5 shuttles)",
+            "front rack hold 2 × 20–30 s, light, fingertip grip",
+            "front squat 4×4–5 @ RPE 8–9, fingertip grip, elbows high; straps if wrists hurt",
+            "trap bar 4×4–5 @ RPE 8–9",
+            "seated leg curl 2×8–10",
+            "core block, 2 rounds: Copenhagen side plank 20–30 s/side · Pallof press 10/side · ab wheel 8–10 · suitcase carry 40 m/side"
+          ],
+          "min": 70,
+          "hard": true
+        }
+      ],
+      "sun": [
+        {
+          "kind": "gym",
+          "title": "Upper",
+          "focus": "upper",
+          "chips": [
+            "strict OHP 5×4 first",
+            "weighted pull-ups 4×5–6",
+            "body-weight pull-ups 2 sets, 2 reps short of failure",
+            "chest-supported DB row 3×10",
+            "single-leg RDL 3×8/side, one dumbbell",
+            "face pull 3×12–15",
+            "DB curl 2×10–12",
+            "wrist curl + reverse wrist curl 2×15, light",
+            "hanging leg raises 2×8–12"
+          ],
+          "min": 65,
+          "hard": true
+        }
+      ]
+    },
+    "holiday-deload": {
+      "mon": [
+        {
+          "kind": "run",
+          "title": "Easy run 5–8 km",
+          "chips": [
+            "HR ≤140"
+          ],
+          "min": 40
+        }
+      ],
+      "tue": [
+        {
+          "kind": "rest",
+          "title": "Rest"
+        }
+      ],
+      "wed": [
+        {
+          "kind": "rest",
+          "title": "Rest"
+        }
+      ],
+      "thu": [
+        {
+          "kind": "run",
+          "title": "Easy run 5–8 km",
+          "chips": [
+            "HR ≤140"
+          ],
+          "min": 40
+        }
+      ],
+      "fri": [
+        {
+          "kind": "rest",
+          "title": "Rest"
+        }
+      ],
+      "sat": [
+        {
+          "kind": "gym",
+          "title": "Legs, no progression",
+          "focus": "legs",
+          "chips": [
+            "front squat 4×6–8, load held, fingertip grip",
+            "trap bar 3×5, load held",
+            "seated leg curl 2×8–10",
+            "core block, 2 rounds: Copenhagen side plank 20–30 s/side · Pallof press 10/side · ab wheel 8–10 · suitcase carry 40 m/side"
+          ],
+          "min": 60
+        }
+      ],
+      "sun": [
+        {
+          "kind": "gym",
+          "title": "Upper, no progression",
+          "focus": "upper",
+          "chips": [
+            "strict OHP 4×6–8 first",
+            "weighted pull-ups 4×5–6",
+            "body-weight pull-ups 2 sets, 2 reps short of failure",
+            "chest-supported DB row 3×10",
+            "single-leg RDL 3×8/side, one dumbbell",
+            "face pull 3×12–15",
+            "DB curl 2×10–12",
+            "hanging leg raises 2×8–12"
+          ],
+          "min": 60
+        }
+      ]
+    },
+    "transition": {
+      "mon": [
+        {
+          "kind": "run",
+          "title": "Easy run 5–8 km",
+          "chips": [
+            "HR ≤140"
+          ],
+          "min": 40
+        }
+      ],
+      "tue": [
+        {
+          "kind": "floorball",
+          "title": "Floorball, if the season still runs",
+          "min": 60,
+          "hard": true,
+          "optional": true
+        }
+      ],
+      "wed": [
+        {
+          "kind": "gym",
+          "title": "Bonus",
+          "focus": "upper",
+          "chips": [
+            "MB rotational wall throw 3×3/side",
+            "DB bench 3×8–10",
+            "DB lateral raise 3×12–15",
+            "rope pushdown 3×12–15",
+            "external rotation 2×15/side (cable or band)"
+          ],
+          "min": 50,
+          "optional": true,
+          "first_to_go": true
+        },
+        {
+          "kind": "run",
+          "title": "Run home 5 km easy",
+          "chips": [
+            "HR ≤140"
+          ],
+          "min": 30,
+          "optional": true,
+          "first_to_go": true
+        }
+      ],
+      "thu": [
+        {
+          "kind": "run",
+          "title": "Easy run 5–8 km",
+          "chips": [
+            "HR ≤140"
+          ],
+          "min": 40
+        }
+      ],
+      "fri": [
+        {
+          "kind": "run",
+          "title": "Run in 5 km easy",
+          "chips": [
+            "HR ≤140"
+          ],
+          "min": 25,
+          "optional": true,
+          "first_to_go": true
+        }
+      ],
+      "sat": [
+        {
+          "kind": "gym",
+          "title": "Legs @ RPE 6",
+          "focus": "legs",
+          "chips": [
+            "back squat 3×5",
+            "trap bar 3×5",
+            "seated leg curl 2×8–10",
+            "core block, 2 rounds: Copenhagen side plank 20–30 s/side · Pallof press 10/side · ab wheel 8–10 · suitcase carry 40 m/side"
+          ],
+          "min": 60
+        }
+      ],
+      "sun": [
+        {
+          "kind": "gym",
+          "title": "Upper @ RPE 6",
+          "focus": "upper",
+          "chips": [
+            "strict OHP 4×6–8 first",
+            "weighted pull-ups 4×5–6",
+            "body-weight pull-ups 2 sets, 2 reps short of failure",
+            "chest-supported DB row 3×10",
+            "single-leg RDL 3×8/side, one dumbbell",
+            "face pull 3×12–15",
+            "DB curl 2×10–12",
+            "hanging leg raises 2×8–12"
+          ],
+          "min": 60
+        }
+      ]
+    },
+    "b3-early": {
+      "mon": [
+        {
+          "kind": "run",
+          "title": "Easy 5–8 km + strides",
+          "chips": [
+            "4–6 × 20 s strides"
+          ],
+          "min": 40
+        }
+      ],
+      "tue": [
+        {
+          "kind": "run",
+          "title": "Intervals 5 × 1 km @ 5K pace",
+          "chips": [
+            "2′ jog",
+            "WU 15′ + strides",
+            "CD 10′",
+            "no pack"
+          ],
+          "min": 50,
+          "hard": true
+        }
+      ],
+      "wed": [
+        {
+          "kind": "gym",
+          "title": "Bonus",
+          "focus": "upper",
+          "chips": [
+            "MB rotational wall throw 3×3/side",
+            "DB bench 3×8–10",
+            "DB lateral raise 3×12–15",
+            "rope pushdown 3×12–15",
+            "external rotation 2×15/side (cable or band)",
+            "SkiErg 8 × 30 s / 30 s"
+          ],
+          "min": 50,
+          "optional": true,
+          "first_to_go": true
+        },
+        {
+          "kind": "run",
+          "title": "Run home 5 km easy",
+          "chips": [
+            "HR ≤140"
+          ],
+          "min": 30,
+          "optional": true,
+          "first_to_go": true
+        }
+      ],
+      "thu": [
+        {
+          "kind": "run",
+          "title": "Tempo 20–25′ @ threshold",
+          "chips": [
+            "HR 160–168"
+          ],
+          "min": 45,
+          "hard": true
+        }
+      ],
+      "fri": [
+        {
+          "kind": "run",
+          "title": "Run in 5 km easy",
+          "chips": [
+            "HR ≤140"
+          ],
+          "min": 25,
+          "optional": true,
+          "first_to_go": true
+        }
+      ],
+      "sat": [
+        {
+          "kind": "gym",
+          "title": "Legs + stations",
+          "focus": "legs",
+          "chips": [
+            "hill sprints 6 × 10 s",
+            "lateral bounds 3×4/side",
+            "back squat 3×5 @ RPE 7",
+            "trap bar 3×5",
+            "seated leg curl 2×8–10",
+            "core block, 2 rounds: Copenhagen side plank 20–30 s/side · Pallof press 10/side · ab wheel 8–10 · suitcase carry 40 m/side",
+            "station block 15′, alternating weeks: A wall balls 3 × 25 @ 6 kg + SkiErg 1,000 m · B sled push + pull 2 × 25 m + burpee broad jumps 2 × 20 m + row 1,000 m"
+          ],
+          "min": 70,
+          "hard": true
+        }
+      ],
+      "sun": [
+        {
+          "kind": "gym",
+          "title": "Upper",
+          "focus": "upper",
+          "chips": [
+            "strict OHP 4×6–8 first",
+            "weighted pull-ups 4×5–6",
+            "body-weight pull-ups 2 sets, 2 reps short of failure",
+            "chest-supported DB row 3×10",
+            "single-leg RDL 3×8/side, one dumbbell",
+            "face pull 3×12–15",
+            "DB curl 2×10–12",
+            "hanging leg raises 2×8–12"
+          ],
+          "min": 65
+        }
+      ]
+    },
+    "b3-strength": {
+      "mon": [
+        {
+          "kind": "run",
+          "title": "Easy 5–8 km + strides",
+          "chips": [
+            "4–6 × 20 s strides"
+          ],
+          "min": 40
+        }
+      ],
+      "tue": [
+        {
+          "kind": "gym",
+          "title": "Second upper",
+          "focus": "upper",
+          "chips": [
+            "incline DB press 3×10",
+            "DB lateral raise 3×12–15",
+            "DB curl 2×10–12",
+            "rope pushdown 3×12–15"
+          ],
+          "min": 50
+        }
+      ],
+      "wed": [
+        {
+          "kind": "gym",
+          "title": "Bonus, no erg",
+          "focus": "upper",
+          "chips": [
+            "MB rotational wall throw 3×3/side",
+            "DB bench 3×8–10",
+            "DB lateral raise 3×12–15",
+            "rope pushdown 3×12–15",
+            "external rotation 2×15/side (cable or band)"
+          ],
+          "min": 50,
+          "optional": true,
+          "first_to_go": true
+        },
+        {
+          "kind": "run",
+          "title": "Run home 5 km easy",
+          "chips": [
+            "HR ≤140"
+          ],
+          "min": 30,
+          "optional": true,
+          "first_to_go": true
+        }
+      ],
+      "thu": [
+        {
+          "kind": "run",
+          "title": "Tempo 20–25′ @ threshold",
+          "chips": [
+            "HR 160–168"
+          ],
+          "min": 45,
+          "hard": true
+        }
+      ],
+      "fri": [
+        {
+          "kind": "run",
+          "title": "Run in 5 km easy",
+          "chips": [
+            "HR ≤140"
+          ],
+          "min": 25,
+          "optional": true,
+          "first_to_go": true
+        }
+      ],
+      "sat": [
+        {
+          "kind": "gym",
+          "title": "Legs",
+          "focus": "legs",
+          "chips": [
+            "standing broad jump 3×3, full rest",
+            "back squat 4×6–8",
+            "trap bar 3×5",
+            "walking lunge 3×10/leg, dumbbells",
+            "seated leg curl 2×8–10",
+            "core block, 2 rounds: Copenhagen side plank 20–30 s/side · Pallof press 10/side · ab wheel 8–10 · suitcase carry 40 m/side"
+          ],
+          "min": 70,
+          "hard": true
+        }
+      ],
+      "sun": [
+        {
+          "kind": "gym",
+          "title": "Upper",
+          "focus": "upper",
+          "chips": [
+            "strict OHP 4×6–8 first",
+            "weighted pull-ups 4×5–6",
+            "body-weight pull-ups 2 sets, 2 reps short of failure",
+            "chest-supported DB row 3×10",
+            "single-leg RDL 3×8/side, one dumbbell",
+            "face pull 3×12–15",
+            "DB curl 2×10–12",
+            "hanging leg raises 2×8–12"
+          ],
+          "min": 65,
+          "hard": true
+        }
+      ]
+    },
+    "summer": {
+      "mon": [
+        {
+          "kind": "run",
+          "title": "Easy run 40′",
+          "chips": [
+            "HR ≤140",
+            "no pack"
+          ],
+          "min": 40
+        }
+      ],
+      "tue": [
+        {
+          "kind": "run",
+          "title": "Intervals",
+          "chips": [
+            "no pack"
+          ],
+          "min": 50,
+          "hard": true
+        }
+      ],
+      "wed": [
+        {
+          "kind": "gym",
+          "title": "Maintenance gym",
+          "focus": "full",
+          "chips": [
+            "back squat 2 × 3–5 @ RPE 7",
+            "strict OHP 3×5 @ RPE 7",
+            "weighted pull-ups 3×5 @ RPE 7 (body weight if no belt)",
+            "seated leg curl 2×8–10",
+            "core block, 1 round: Copenhagen side plank 20–30 s/side · Pallof press 10/side · ab wheel 8–10 · suitcase carry 40 m/side",
+            "standing calf raise 2×12–15",
+            "push press technique 3×2, light"
+          ],
+          "min": 40
+        }
+      ],
+      "thu": [
+        {
+          "kind": "run",
+          "title": "Threshold",
+          "chips": [
+            "48 h after Tuesday"
+          ],
+          "min": 50,
+          "hard": true
+        }
+      ],
+      "fri": [
+        {
+          "kind": "run",
+          "title": "Easy run 30–40′",
+          "chips": [
+            "HR ≤140"
+          ],
+          "min": 40,
+          "optional": true
+        }
+      ],
+      "sat": [
+        {
+          "kind": "run",
+          "title": "Long run, easy",
+          "chips": [
+            "HR ≤140"
+          ],
+          "min": 60
+        }
+      ],
+      "sun": [
+        {
+          "kind": "gym",
+          "title": "Maintenance gym",
+          "focus": "full",
+          "chips": [
+            "conventional deadlift 2 × 3–5 @ RPE 7",
+            "strict OHP 3×5 @ RPE 7",
+            "weighted pull-ups 3×5 @ RPE 7 (body weight if no belt)",
+            "seated leg curl 2×8–10",
+            "core block, 1 round: Copenhagen side plank 20–30 s/side · Pallof press 10/side · ab wheel 8–10 · suitcase carry 40 m/side",
+            "standing calf raise 2×12–15",
+            "push press technique 3×2, light"
+          ],
+          "min": 40
+        }
+      ]
+    },
+    "b4-a": {
+      "mon": [
+        {
+          "kind": "run",
+          "title": "Easy 5–8 km + strides",
+          "chips": [
+            "4–6 × 20 s strides"
+          ],
+          "min": 40
+        }
+      ],
+      "tue": [
+        {
+          "kind": "run",
+          "title": "Track session",
+          "chips": [
+            "no pack"
+          ],
+          "min": 50,
+          "hard": true
+        }
+      ],
+      "wed": [
+        {
+          "kind": "gym",
+          "title": "Bonus, erg 10′ steady",
+          "focus": "upper",
+          "chips": [
+            "MB rotational wall throw 3×3/side",
+            "DB bench 3×8–10",
+            "DB lateral raise 3×12–15",
+            "rope pushdown 3×12–15",
+            "external rotation 2×15/side (cable or band)",
+            "SkiErg 10′ steady"
+          ],
+          "min": 50,
+          "optional": true,
+          "first_to_go": true
+        },
+        {
+          "kind": "run",
+          "title": "Run home 5 km easy",
+          "chips": [
+            "HR ≤140"
+          ],
+          "min": 30,
+          "optional": true,
+          "first_to_go": true
+        }
+      ],
+      "thu": [
+        {
+          "kind": "run",
+          "title": "Tempo 20–25′ @ threshold",
+          "chips": [
+            "run home, by HR"
+          ],
+          "min": 45,
+          "hard": true
+        }
+      ],
+      "fri": [
+        {
+          "kind": "run",
+          "title": "Run in 5 km easy",
+          "chips": [
+            "HR ≤140"
+          ],
+          "min": 25,
+          "optional": true,
+          "first_to_go": true
+        }
+      ],
+      "sat": [
+        {
+          "kind": "gym",
+          "title": "A: back squat ladder",
+          "focus": "legs",
+          "chips": [
+            "back squat ladder: 4 sets of 3–5, rising to one top set @ RPE 8",
+            "trap bar 3×5 @ RPE 8–9",
+            "seated leg curl 2×8–10",
+            "core block, 2 rounds: Copenhagen side plank 20–30 s/side · Pallof press 10/side · ab wheel 8–10 · suitcase carry 40 m/side"
+          ],
+          "min": 70,
+          "hard": true
+        }
+      ],
+      "sun": [
+        {
+          "kind": "gym",
+          "title": "A: OHP + pull-ups",
+          "focus": "upper",
+          "chips": [
+            "strict OHP 4×5 @ RPE 8–9",
+            "weighted pull-ups 3×5 @ RPE 8–9"
+          ],
+          "min": 65
+        }
+      ]
+    },
+    "b4-b": {
+      "mon": [
+        {
+          "kind": "run",
+          "title": "Easy 5–8 km + strides",
+          "chips": [
+            "4–6 × 20 s strides"
+          ],
+          "min": 40
+        }
+      ],
+      "tue": [
+        {
+          "kind": "run",
+          "title": "Track session",
+          "chips": [
+            "no pack"
+          ],
+          "min": 50,
+          "hard": true
+        }
+      ],
+      "wed": [
+        {
+          "kind": "gym",
+          "title": "Bonus, erg 10′ steady",
+          "focus": "upper",
+          "chips": [
+            "MB rotational wall throw 3×3/side",
+            "DB bench 3×8–10",
+            "DB lateral raise 3×12–15",
+            "rope pushdown 3×12–15",
+            "external rotation 2×15/side (cable or band)",
+            "SkiErg 10′ steady"
+          ],
+          "min": 50,
+          "optional": true,
+          "first_to_go": true
+        },
+        {
+          "kind": "run",
+          "title": "Run home 5 km easy",
+          "chips": [
+            "HR ≤140"
+          ],
+          "min": 30,
+          "optional": true,
+          "first_to_go": true
+        }
+      ],
+      "thu": [
+        {
+          "kind": "run",
+          "title": "Tempo 20–25′ @ threshold",
+          "chips": [
+            "run home, by HR"
+          ],
+          "min": 45,
+          "hard": true
+        }
+      ],
+      "fri": [
+        {
+          "kind": "run",
+          "title": "Run in 5 km easy",
+          "chips": [
+            "HR ≤140"
+          ],
+          "min": 25,
+          "optional": true,
+          "first_to_go": true
+        }
+      ],
+      "sat": [
+        {
+          "kind": "gym",
+          "title": "B: squat 3×5",
+          "focus": "legs",
+          "chips": [
+            "back squat 3×5 @ RPE 8–9",
+            "trap bar 3×5 @ RPE 8–9",
+            "seated leg curl 2×8–10",
+            "core block, 2 rounds: Copenhagen side plank 20–30 s/side · Pallof press 10/side · ab wheel 8–10 · suitcase carry 40 m/side"
+          ],
+          "min": 70
+        }
+      ],
+      "sun": [
+        {
+          "kind": "gym",
+          "title": "B: OHP + weighted pull-up ladders",
+          "focus": "upper",
+          "chips": [
+            "strict OHP ladder: 4 sets of 3–5, rising to one top set @ RPE 8",
+            "weighted pull-up ladder: 4 sets of 3–5, rising to one top set @ RPE 8"
+          ],
+          "min": 65,
+          "hard": true
+        }
+      ]
+    },
+    "event-week": {
+      "mon": [
+        {
+          "kind": "run",
+          "title": "Easy 5–8 km, light",
+          "chips": [
+            "HR ≤140"
+          ],
+          "min": 40
+        }
+      ],
+      "tue": [
+        {
+          "kind": "run",
+          "title": "Easy run, no track session",
+          "chips": [
+            "HR ≤140"
+          ],
+          "min": 40
+        }
+      ],
+      "wed": [
+        {
+          "kind": "gym",
+          "title": "Bonus, light",
+          "focus": "upper",
+          "chips": [
+            "MB rotational wall throw 3×3/side",
+            "DB bench 3×8–10",
+            "DB lateral raise 3×12–15",
+            "rope pushdown 3×12–15",
+            "external rotation 2×15/side (cable or band)"
+          ],
+          "min": 40,
+          "optional": true,
+          "first_to_go": true
+        },
+        {
+          "kind": "run",
+          "title": "Run home 5 km easy",
+          "chips": [
+            "HR ≤140"
+          ],
+          "min": 30,
+          "optional": true,
+          "first_to_go": true
+        }
+      ],
+      "thu": [
+        {
+          "kind": "run",
+          "title": "Easy run, no legs from today",
+          "chips": [
+            "HR ≤140"
+          ],
+          "min": 40
+        }
+      ],
+      "fri": [
+        {
+          "kind": "run",
+          "title": "Run in 5 km easy",
+          "chips": [
+            "HR ≤140"
+          ],
+          "min": 25,
+          "optional": true,
+          "first_to_go": true
+        }
+      ],
+      "sat": [
+        {
+          "kind": "event",
+          "title": "Fitness event, day 1",
+          "chips": [
+            "open with a 3-rep weight, stop at RPE ~9",
+            "30–60 g carbs between modules"
+          ],
+          "hard": true
+        }
+      ],
+      "sun": [
+        {
+          "kind": "event",
+          "title": "Fitness event, day 2",
+          "chips": [
+            "3 km + SkiErg: steady"
+          ],
+          "hard": true
+        }
+      ]
+    },
+    "test-week": {
+      "mon": [
+        {
+          "kind": "run",
+          "title": "Easy 5–8 km",
+          "chips": [
+            "HR ≤140"
+          ],
+          "min": 40
+        }
+      ],
+      "tue": [
+        {
+          "kind": "run",
+          "title": "4 × 200 m relaxed-fast",
+          "chips": [
+            "easy WU + CD"
+          ],
+          "min": 40
+        }
+      ],
+      "wed": [
+        {
+          "kind": "test",
+          "title": "Test: lifts",
+          "chips": [
+            "strict OHP: one top set of 5 @ RPE 8",
+            "front squat: one top set of 5 @ RPE 8",
+            "weighted pull-up: one top set of 5 @ RPE 8",
+            "strict pull-ups: one max set",
+            "bench: one monitor single"
+          ],
+          "min": 90,
+          "hard": true,
+          "warmup": "lift-test"
+        }
+      ],
+      "thu": [
+        {
+          "kind": "rest",
+          "title": "Rest"
+        }
+      ],
+      "fri": [
+        {
+          "kind": "rest",
+          "title": "Rest"
+        }
+      ],
+      "sat": [
+        {
+          "kind": "test",
+          "title": "Cooper test",
+          "chips": [
+            "400 m track",
+            "WU 15′ easy + drills + 2 × 300 m at test pace + strides",
+            "89–90 s per lap, lap 1 no faster than 87 s"
+          ],
+          "min": 45,
+          "hard": true
+        }
+      ],
+      "sun": [
+        {
+          "kind": "rest",
+          "title": "Rest"
+        }
+      ]
+    }
+  },
+  "warmups": {
+    "legs": {
+      "min": 12,
+      "steps": [
+        [
+          "easy bike, rower or SkiErg",
+          "3′"
+        ],
+        [
+          "leg swings, front and side",
+          "10/side"
+        ],
+        [
+          "world's greatest stretch",
+          "3/side"
+        ],
+        [
+          "glute bridge",
+          "2×10"
+        ],
+        [
+          "pogos",
+          "2×20"
+        ],
+        [
+          "wrist extension stretch, palms down · lat-triceps stretch, elbows on a bench",
+          "2 × 30 s each"
+        ],
+        [
+          "upper-back extension over a foam roller",
+          "10"
+        ]
+      ],
+      "ramp": "bar ×8 → ~50% ×5 → ~75% ×3"
+    },
+    "upper": {
+      "min": 8,
+      "steps": [
+        [
+          "easy rower or SkiErg",
+          "3′"
+        ],
+        [
+          "band pull-apart",
+          "2×15"
+        ],
+        [
+          "external rotation",
+          "2×12/side"
+        ],
+        [
+          "scap pull-ups",
+          "1×8"
+        ]
+      ],
+      "ramp": "~50% ×5 → ~75% ×3"
+    },
+    "full": {
+      "min": 8,
+      "steps": [
+        [
+          "easy rower or SkiErg",
+          "3′"
+        ],
+        [
+          "leg swings",
+          "10/side"
+        ],
+        [
+          "band pull-apart",
+          "2×15"
+        ],
+        [
+          "external rotation",
+          "2×12/side"
+        ],
+        [
+          "glute bridge",
+          "2×10"
+        ]
+      ],
+      "ramp": "bar ×8 → ~50% ×5 → ~75% ×3"
+    },
+    "lift-test": {
+      "min": 12,
+      "steps": [
+        [
+          "easy rower or SkiErg",
+          "3′"
+        ],
+        [
+          "band pull-apart",
+          "2×15"
+        ],
+        [
+          "external rotation",
+          "2×12/side"
+        ],
+        [
+          "leg swings",
+          "10/side"
+        ],
+        [
+          "goblet squat, slow",
+          "2×5"
+        ],
+        [
+          "wrist extension stretch, palms down · lat-triceps stretch, elbows on a bench",
+          "2 × 30 s each"
+        ]
+      ],
+      "ramp": "bar ×5 → ~50% ×5 → ~70% ×3 → ~85% ×1–2 → rest 3′"
+    },
+    "jumps-sprints": {
+      "min": 12,
+      "steps": [
+        [
+          "easy jog or bike",
+          "5′"
+        ],
+        [
+          "leg swings",
+          "10/side"
+        ],
+        [
+          "A-skips and high knees",
+          "2 × 15 m"
+        ],
+        [
+          "build-up runs at 60, 80 and 90%",
+          "3 × 20 m"
+        ],
+        [
+          "practice jumps at ~80%",
+          "2"
+        ]
+      ]
+    }
+  }
+}
